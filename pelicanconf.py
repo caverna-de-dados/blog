@@ -104,6 +104,8 @@ COLOR_SCHEME_CSS = 'github.css'
 
 #CSS_OVERRIDE = ['assets/css/myblog.css']
 
+CUSTOM_CSS = 'static/custom.css'
+
 AUTHORS_BIO = {
   "zutrinken": {
     "name": "Zutrinken",
