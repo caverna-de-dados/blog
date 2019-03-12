@@ -36,20 +36,12 @@ DEFAULT_PAGINATION = 10
 
 # STATIC_PATHS = ['assets']
 
-STATIC_PATHS = ['assets']
-
 
 # EXTRA_PATH_METADATA = {
 #     'assets/robots.txt': {'path': 'robots.txt'},
 #     'assets/favicon.ico': {'path': 'favicon.ico'},
 #     'assets/CNAME': {'path': 'CNAME'}
 # }
-
-EXTRA_PATH_METADATA = {
-#     'assets/robots.txt': {'path': 'robots.txt'},
-    'assets/favicon.ico': {'path': 'favicon.ico'},
-#     'assets/CNAME': {'path': 'CNAME'}
-}
 
 
 
@@ -114,7 +106,7 @@ COLOR_SCHEME_CSS = 'github.css'
 
 #CSS_OVERRIDE = ['assets/css/myblog.css']
 
-CUSTOM_CSS = '/content/static/custom.css'
+CSS_FILE = '/content/static/custom.css'
 
 AUTHORS_BIO = {
   "zutrinken": {
@@ -132,8 +124,7 @@ AUTHORS_BIO = {
 # Custom Header
 
 #HEADER_COVERS_BY_TAG = {'cupcake': 'assets/images/rainbow_cupcake_cover.png', 'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
-# HEADER_COVERS_BY_TAG = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
-HEADER_COVERS_BY_TAG = {'general':'BG.jpg'}
+HEADER_COVERS_BY_TAG = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
 
 
 
