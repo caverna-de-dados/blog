@@ -43,6 +43,14 @@ DEFAULT_PAGINATION = 10
 #     'assets/CNAME': {'path': 'CNAME'}
 # }
 
+EXTRA_PATH_METADATA = {
+#     'assets/robots.txt': {'path': 'robots.txt'},
+    'assets/favicon.ico': {'static/img/': 'favicon.ico'},
+#     'assets/CNAME': {'path': 'CNAME'}
+}
+
+
+
 # Post and Pages path
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}.html'
