@@ -132,6 +132,8 @@ AUTHORS_BIO = {
 # Custom Header
 
 #HEADER_COVERS_BY_TAG = {'cupcake': 'assets/images/rainbow_cupcake_cover.png', 'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
-HEADER_COVERS_BY_TAG = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
+# HEADER_COVERS_BY_TAG = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
+HEADER_COVERS_BY_TAG = {'general':'BG.jpg'}
+
 
 
