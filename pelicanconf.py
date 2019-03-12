@@ -36,6 +36,8 @@ DEFAULT_PAGINATION = 10
 
 # STATIC_PATHS = ['assets']
 
+STATIC_PATHS = ['assets']
+
 
 # EXTRA_PATH_METADATA = {
 #     'assets/robots.txt': {'path': 'robots.txt'},
@@ -45,7 +47,7 @@ DEFAULT_PAGINATION = 10
 
 EXTRA_PATH_METADATA = {
 #     'assets/robots.txt': {'path': 'robots.txt'},
-    'assets/favicon.ico': {'static/img/': 'favicon.ico'},
+    'assets/favicon.ico': {'path': 'favicon.ico'},
 #     'assets/CNAME': {'path': 'CNAME'}
 }
 
@@ -112,7 +114,7 @@ COLOR_SCHEME_CSS = 'github.css'
 
 #CSS_OVERRIDE = ['assets/css/myblog.css']
 
-CUSTOM_CSS = 'static/custom.css'
+CUSTOM_CSS = 'content/static/custom.css'
 
 AUTHORS_BIO = {
   "zutrinken": {
