@@ -100,7 +100,9 @@ THEME = 'attila'
 
 ### Theme specific settings
 
-HEADER_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
+# HEADER_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
+HEADER_COVER = 'https://raw.githubusercontent.com/hugotrigueiro/Entropy-Function/master/BG.jpg'
+
 
 COLOR_SCHEME_CSS = 'github.css'
 
