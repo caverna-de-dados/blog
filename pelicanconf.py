@@ -75,7 +75,7 @@ PLUGIN_PATHS = [
 PLUGINS = [
   'sitemap',
   'neighbors',
-  #'assets'
+  'assets'
 ]
 
 # Sitemap
