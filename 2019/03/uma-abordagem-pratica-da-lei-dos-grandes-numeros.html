@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+  <title>Uma abordagem prática da Lei dos Grandes Números</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <link href="/" rel="canonical" />
+
+  <!-- Feed -->
+
+  <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="/theme/css/code_blocks/github.css" rel="stylesheet">
+
+    <!-- CSS specified by the user -->
+
+
+    <link href="/assets/custom.css" type="text/css" rel="stylesheet" />
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+  <link href="/2019/03/uma-abordagem-pratica-da-lei-dos-grandes-numeros.html" rel="canonical" />
+
+    <meta name="description" content="Veja uma abordagem prática da aplicação da Lei dos Grandes Números a um experimento de Roleta Maluca">
+
+    <meta name="author" content="Diego Zurita">
+
+    <meta name="tags" content="pelican">
+    <meta name="tags" content="publishing">
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Caverna de Dados"/>
+<meta property="og:title" content="Uma abordagem prática da Lei dos Grandes Números"/>
+<meta property="og:description" content="Veja uma abordagem prática da aplicação da Lei dos Grandes Números a um experimento de Roleta Maluca"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/2019/03/uma-abordagem-pratica-da-lei-dos-grandes-numeros.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-03-15 00:41:00+01:00"/>
+<meta property="article:modified_time" content="2019-03-15 00:41:00+01:00"/>
+<meta property="article:author" content="/author/diego-zurita">
+<meta property="article:section" content="Matemática"/>
+<meta property="article:tag" content="pelican"/>
+<meta property="article:tag" content="publishing"/>
+<meta property="og:image" content="/assets/BG.jpg">
+
+<!-- Twitter Card -->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "Uma abordagem prática da Lei dos Grandes Números",
+  "headline": "Uma abordagem prática da Lei dos Grandes Números",
+  "datePublished": "2019-03-15 00:41:00+01:00",
+  "dateModified": "2019-03-15 00:41:00+01:00",
+  "author": {
+    "@type": "Person",
+    "name": "Diego Zurita",
+    "url": "/author/diego-zurita"
+  },
+  "image": "/assets/BG.jpg",
+  "url": "/2019/03/uma-abordagem-pratica-da-lei-dos-grandes-numeros.html",
+  "description": "Veja uma abordagem prática da aplicação da Lei dos Grandes Números a um experimento de Roleta Maluca"
+}
+</script>
+</head>
+<!-- TODO : Body class -->
+<body class="home-template">
+
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
+
+
+    </ul>
+  </div>
+</nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="blog-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span class="blog-logo">
+                <a href="/"><img src="/assets/logo.png" alt="Blog Logo" /></a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Uma abordagem prática da Lei dos Grandes Números</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="/author/diego-zurita">Diego Zurita</a>
+            | <time datetime="sex 15 março 2019">sex 15 março 2019</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on sex 15 março 2019</span>
+            <div class="post-cover cover" style="background-image: url('/assets/BG.jpg')">
+      </div>
+    </header>
+
+  <section id="wrapper">
+    <a class="hidden-close"></a>
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <p>Quando estamos na escola, ou algum momento da nossa vida, nos deparamos com o ensino de probabilidade, estátistica e afins, e nos deparamos com o seguinte problema: dada uma moeda, qual a chance de cair cara ou coroa?</p>
+<p>Diante desse desafio, vemos que há 50% chances de cair cara e 50% chances de cair coroa! E isso está correto, porém como bons cientistas e curiosos que somos, vamos ao experimento, e lançamos a moeda algumas dez vezes, contudo, vemos na prática que ocorre mais caras do que coroas, ou o inverso..</p>
+<p>Ora, como isso é possível? Será que as contas que foram feitas estão erradas? Será que a matemática é falha?</p>
+<p>Bom … Isso intrigou alguns pensadores até o momentos, dentre eles estava Jakob Bernoulli (1654-1705). Ele disse que existem algum número de tentativa que devemos fazer, para que o número calculado de fato ocorra. Um número grande, dai o nome.</p>
+<p>Ou seja, existem um número de lançamentos, no caso da moeda, para qual o número de vezes que sai coroa é aproximadamente metade e de sair cara, também. E este número tende a ser grande.</p>
+<p>Para demostrar essa idéia, não usarei o exemplo da moeda, pois não há tempo de lançar uma moeda 10⁶ vezes. Usarei um trabalho de faculdade, o qual me motivou a escreve este texto.</p>
+<p>Se trata de uma roleta maluta (nome do trabalho), um jogo em que o usuário informa um número, entre 2 e 100, que será o total de possibilidades da roleta. Por exemplo caso o usuário digite 50, haverá 50 possibilidades na roleta.</p>
+<p>Para cada possibilidade há uma probabilidade de escolha atribuida ao número, o que signifca que para cair o número 0 há uma probabilidade x e para o 1 é y, assim por diante.</p>
+<p>E por fim, se trata de uma competição com a máquina, cujo cada um, máquina e jogador, devem escolher um número e ganha aquele que chegar mais perto do número.</p>
+<p>Para efeitos de observação, irei simular algumas jogadas e exibir uma tabela para ver como os números se comportam.</p>
+<p>(Explicando as tabelas: x é o número em questão. Peso, é o peso (rs) atribuido a variável x, Prob(x) é a probabilidade calculada de sair x e Freq(x) é a frequência observada de fato nos sorteios de números)</p>
+            </section>
+
+            <section class="post-info">
+                <div class="post-share">
+                    <a class="twitter" href="https://twitter.com/share?text=Uma abordagem prática da Lei dos Grandes Números&amp;url=/2019/03/uma-abordagem-pratica-da-lei-dos-grandes-numeros.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/2019/03/uma-abordagem-pratica-da-lei-dos-grandes-numeros.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
+                    </a>
+                    <a class="googleplus" href="https://plus.google.com/share?url=/2019/03/uma-abordagem-pratica-da-lei-dos-grandes-numeros.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+
+                <aside class="post-tags">
+<a href="/tag/pelican">pelican</a><a href="/tag/publishing">publishing</a>                </aside>
+
+                <div class="clear"></div>
+
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
+
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+
+
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script type="text/javascript" src="/theme/js/script.js"></script>
+
+</body>
+</html>
