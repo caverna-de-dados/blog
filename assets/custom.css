@@ -2,3 +2,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nexa Rust Sans';
 }
 
+.main-logo {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#blog-header.has-cover {
+    padding: 140px 0;
+}
