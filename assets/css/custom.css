@@ -1,8 +1,3 @@
-@font-face {
-	font-family: 'Nexa Rust Sans';
-	src: url('assets/font/NexaRustSans-Black.otf');
-}
-
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nexa Rust Sans';
 }
