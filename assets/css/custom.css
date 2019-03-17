@@ -13,6 +13,7 @@
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'NexaRustSans-Black';
+	font-size: 40px;
 }
 
 .main-logo {
@@ -24,12 +25,16 @@ h1, h2, h3, h4, h5, h6 {
     padding: 80px 0;
 }
 
+/*MOBILE*/
 @media (max-width: 667px) {
 	.main-logo {
     	width: 70%;
 	}
 	#blog-header.has-cover  {
 	    padding: 140px 0;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 30px;
 	}
 }
 
