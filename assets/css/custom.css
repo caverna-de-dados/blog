@@ -12,8 +12,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 667px) {
+	.main-logo {
+    	width: 70%;
+	}
 	#blog-header.has-cover  {
-	    padding: 180px 0;
+	    padding: 140px 0;
 	}
 }
 
