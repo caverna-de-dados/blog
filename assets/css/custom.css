@@ -1,12 +1,12 @@
 @font-face {
   font-family: "NexaRustSans-Black";
-  src: url("/assets/fonts/NexaRustSans-Black.eot"); /* IE9 Compat Modes */
-  src: url("/assets/fonts/NexaRustSans-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("/assets/fonts/NexaRustSans-Black.otf") format("opentype"), /* Open Type Font */
-    url("/assets/fonts/NexaRustSans-Black.svg") format("svg"), /* Legacy iOS */
-    url("/assets/fonts/NexaRustSans-Black.ttf") format("truetype"), /* Safari, Android, iOS */
-    url("/assets/fonts/NexaRustSans-Black.woff") format("woff"), /* Modern Browsers */
-    url("/assets/fonts/NexaRustSans-Black.woff2") format("woff2"); /* Modern Browsers */
+  src: url("/assets/fonts/NexaRustSansBlack.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/NexaRustSansBlack.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/assets/fonts/NexaRustSansBlack.otf") format("opentype"), /* Open Type Font */
+    url("/assets/fonts/NexaRustSansBlack.svg") format("svg"), /* Legacy iOS */
+    url("/assets/fonts/NexaRustSansBlack.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/assets/fonts/NexaRustSansBlack.woff") format("woff"), /* Modern Browsers */
+    url("/assets/fonts/NexaRustSansBlack.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
