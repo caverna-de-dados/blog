@@ -1,5 +1,18 @@
+@font-face {
+  font-family: "NexaRustSans-Black";
+  src: url("/assets/fonts/NexaRustSans-Black.eot"); /* IE9 Compat Modes */
+  src: url("/assets/fonts/NexaRustSans-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/assets/fonts/NexaRustSans-Black.otf") format("opentype"), /* Open Type Font */
+    url("/assets/fonts/NexaRustSans-Black.svg") format("svg"), /* Legacy iOS */
+    url("/assets/fonts/NexaRustSans-Black.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/assets/fonts/NexaRustSans-Black.woff") format("woff"), /* Modern Browsers */
+    url("/assets/fonts/NexaRustSans-Black.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Nexa Rust Sans';
+	font-family: 'NexaRustSans-Black';
 }
 
 .main-logo {
