@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'Nexa Rust Sans';
+	src: url('assets/font/NexaRustSans-Black.otf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Nexa Rust Sans';
+}
+
+.main-logo {
+    margin: 0 auto;
+    width: 65%;
+}
+
+#blog-header.has-cover  {
+    padding: 130px 0;
+}
+
+.blog-logo a img {
+	opacity: 0.3;
+}
