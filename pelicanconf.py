@@ -2,11 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+
+
 AUTHOR = 'Caverneiros'
 SITENAME = 'Caverna de Dados'
-SITEURL = ''
+SITEURL = 'https://cavernadedados.com'
+SITE_LOGO = '/assets/img/logo.png'
 
-PATH = 'content'
+PATH = 'content/'
 
 TIMEZONE = 'Europe/Paris'
 
@@ -26,23 +29,33 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+          # ('twitter', 'https://twitter.com/myprofile'),
+          ('github', 'https://github.com/caverna-de-dados'),
+          ('facebook','https://www.facebook.com/myprofile/'),
+          # ('flickr','https://www.flickr.com/myprofile/'),
+          # ('envelope','mailto:my@mail.address')
+          )
+
 
 DEFAULT_PAGINATION = 10
+
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+)
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-STATIC_PATHS = ['assets', 'static']
+STATIC_PATHS = ['assets']
 
 
-# EXTRA_PATH_METADATA = {
+EXTRA_PATH_METADATA = {
 #     'assets/robots.txt': {'path': 'robots.txt'},
-#     'assets/favicon.ico': {'path': 'favicon.ico'},
-#     'assets/CNAME': {'path': 'CNAME'}
-# }
-
+    'assets/img/favicon.ico': {'path': 'favicon.ico'},
+    'assets/CNAME': {'path': 'CNAME'}
+}
 
 
 # Post and Pages path
@@ -72,11 +85,11 @@ PLUGIN_PATHS = [
   '/home/diego/Desktop/repos/blog/plugins'
 ]
 
-PLUGINS = [
-  'sitemap',
-  'neighbors',
-  'assets'
-]
+# PLUGINS = [
+#   'sitemap',
+#   'neighbors',
+#   'assets'
+# ]
 
 # Sitemap
 SITEMAP = {
@@ -96,29 +109,43 @@ SITEMAP = {
 # Analytics
 #GOOGLE_ANALYTICS = "UA-3546274-12"
 
-THEME = 'attila'
+THEME = 'C:/Windows/System32/pelican-addon-clones/pelican-themes-extra/attila'
 
 ### Theme specific settings
 
-# HEADER_COVER = 'https://casper.ghost.org/v1.0.0/images/welcome.jpg'
-HEADER_COVER = 'https://raw.githubusercontent.com/hugotrigueiro/Entropy-Function/master/BG.jpg'
 
+HEADER_COVER = 'assets/img/BG.jpg'
 
-COLOR_SCHEME_CSS = 'github.css'
-
-#CSS_OVERRIDE = ['assets/css/myblog.css']
-
-CUSTOM_CSS = 'assets/custom.css'
 
 AUTHORS_BIO = {
-  "zutrinken": {
-    "name": "Zutrinken",
+  # "zutrinken": {
+  #   "name": "Zutrinken",
+  #   "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+  #   # "image": "assets/images/avatar.png",
+  #   "website": "http://blog.arulraj.net",
+  #   "linkedin": "unavailable",
+  #   "github": "arulrajnet",
+  #   "location": "Chennai",
+  #   "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
+  # }, 
+  "hugo": {
+    "name": "Hugo Trigueiro",
+    "cover": "assets/img/bg-hugo.jpg",
+    "image": "assets/img/hugo.jpg",
+    # "website": "http://blog.arulraj.net",
+    "linkedin": "hugo-trigueiro",
+    # "github": "arulrajnet",
+    "location": "São Paulo/SP",
+    "bio": "É graduando em Economia na Universidade Federal do ABC e trabalha como Analista de Captação de Recursos em uma instituição do terceiro setor."
+  }, 
+  "diego": {
+    "name": "Diego Zurita",
     "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
-    #"image": "assets/images/avatar.png",
+    "image": "assets/img/diego.jpg",
     "website": "http://blog.arulraj.net",
-    "linkedin": "unavailable",
+    "linkedin": "diego-zurita-067775110",
     "github": "arulrajnet",
-    "location": "Chennai",
+    "location": "São Paulo/SP",
     "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
   }
 }
@@ -129,4 +156,6 @@ AUTHORS_BIO = {
 HEADER_COVERS_BY_TAG = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
 
 
+COLOR_SCHEME_CSS = 'github.css'
 
+CSS_OVERRIDE = ['assets/css/custom.css']
