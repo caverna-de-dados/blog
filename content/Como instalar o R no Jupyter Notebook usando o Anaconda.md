@@ -5,9 +5,10 @@ Category: Python, Jupyter Notebook
 Tags: pelican, publishing
 Slug: como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda
 Authors: hugo
-Summary: Saiba como instalar o setup "R Essentials" no Anaconda, e poder usar a linguagem R e mais 400 pacotes no Jupyter Notebook.
+Summary: Saiba como instalar o Setup "R Essentials" no Anaconda e poder usar no Jupyter Notebook, o R, e mais 400 pacotes voltados a essa linguagem.
+Cover: assets/img/anaconda.jpg
 
-O [Jupyter Notebook](https://jupyter.org/) é uma Aplicação Web Open-Source e uma das principais ferramentas usadas pelos Data Scientists.
+[Jupyter Notebook](https://jupyter.org/) é uma Aplicação Web Open-Source e uma das principais ferramentas usadas pelos Data Scientists.
 
 Ele permite criar e compartilhar documentos que suportam desde códigos em múltiplas linguagens, como por exemplo, Python, R e Julia, até textos em Markdown, equações em LaTeX e visualizações de gráficos, imagens e vídeos, além de ser facilmente instalável pelo [Anaconda](https://anaconda.org/).
 
@@ -23,21 +24,20 @@ O "R Essentials" é um setup criado pela equipe do Anaconda e que contém mais d
 
 Ao instalar esse setup, é possível fazer o uso da linguagem R no Jupyter Notebook, bem como todos os pacotes vindos com ele.
 
-Para instalar o "R Essentials", abra o prompt de comando do Anaconda.
-
-Aqui temos um pequeno **ponto de atenção**: você pode instalar o "R Essentials" no seu environment de uso atual ou instalá-lo em um novo enviroment.
+Antes de instalar o "R Essentials" é necessário prestar **atenção a um pequeno ponto**: você pode instalar o "R Essentials" no seu environment (ambiente) de uso atual ou instalá-lo em um novo environment.
 
 Ao utilizar um novo environment, você terá um novo ambiente apenas para o armazenamento e organização dos pacotes de R, isso pode te ajudar caso no futuro você queria deixar esse ambiente ainda mais robusto e customizado. Ainda assim, não há nenhum problema em usar o mesmo envinroment para os pacotes de Python e R.
 
-Para instalar o "R Essentials" no seu **environment (ambiente) atual**, utilize o comando abaixo no prompt do Anaconda:
+Então, no prompt do Anaconda:
+
+Para instalar o "R Essentials" no seu environment atual, utilize o comando:
 
 ```
 conda install -c r r-essentials 
 ```
 
 
-
-Para instalar o "R Essentials" em um **novo environment (ambiente):**
+Caso você queira criar um novo environment, basta usar o comando abaixo:
 
 ```
 conda create -n r_env r-essentials r-base
