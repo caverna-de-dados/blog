@@ -1,14 +1,14 @@
 Title: Como instalar o R no Jupyter Notebook usando o Anaconda
-Date: 2019-03-21 22:30
-Modified: 2019-03-21 22:30
-Category: Python, Jupyter Notebook
-Tags: pelican, publishing
+Date: 2019-03-23 17:00
+Modified: 2019-03-23 17:00
+Category: Tutoriais
+Tags: R, Jupyter Notebook, Anaconda
 Slug: como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda
 Author: hugo
-Summary: Saiba como instalar o Setup "R Essentials" no Anaconda e poder usar no Jupyter Notebook, o R, e mais 400 pacotes voltados a essa linguagem.
+Summary: Saiba como instalar o Setup "R Essentials" no Anaconda e poder usar no Jupyter Notebook, o R, e mais de 80 pacotes voltados a Data Science.
 Cover: assets/img/anaconda.jpg
 
-[Jupyter Notebook](https://jupyter.org/) é uma Aplicação Web Open-Source e uma das principais ferramentas usadas pelos Data Scientists.
+[Jupyter Notebook](https://jupyter.org/) é uma Aplicação Web Open-Source e uma das principais ferramentas usadas pelos Data Scientists!
 
 Ele permite criar e compartilhar documentos que suportam desde códigos em múltiplas linguagens, como por exemplo, Python, R e Julia, até textos em Markdown, equações em LaTeX e visualizações de gráficos, imagens e vídeos, além de ser facilmente instalável pelo [Anaconda](https://anaconda.org/).
 
