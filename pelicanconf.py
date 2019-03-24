@@ -108,7 +108,7 @@ SITEMAP = {
 }
 
 # Analytics
-#GOOGLE_ANALYTICS = "UA-3546274-12"
+GOOGLE_ANALYTICS = "UA-136764041-1"
 
 THEME = 'C:/Windows/System32/pelican-addon-clones/pelican-themes-extra/attila'
 
