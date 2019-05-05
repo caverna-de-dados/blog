@@ -14,19 +14,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-  <link href="/" rel="canonical" />
+  <link href="https://cavernadedados.com/" rel="canonical" />
 
   <!-- Feed -->
 
-  <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="https://cavernadedados.com/theme/css/style.css" type="text/css" rel="stylesheet" />
 
   <!-- Code highlight color scheme -->
-      <link href="/theme/css/code_blocks/github.css" rel="stylesheet">
+      <link href="https://cavernadedados.com/theme/css/code_blocks/github.css" rel="stylesheet">
 
     <!-- CSS specified by the user -->
 
 
-    <link href="/assets/css/custom.css" type="text/css" rel="stylesheet" />
+    <link href="https://cavernadedados.com/assets/css/custom.css" type="text/css" rel="stylesheet" />
 
   <!-- Custom fonts -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
@@ -40,7 +40,7 @@
   <![endif]-->
 
 
-  <link href="/2010/12/my-super-post.html" rel="canonical" />
+  <link href="https://cavernadedados.com/2010/12/my-super-post.html" rel="canonical" />
 
     <meta name="description" content="Short version for index and feeds">
 
@@ -57,16 +57,16 @@
 <meta property="og:title" content="Como plotar Gráfico de Múltiplas Barras com Pandas e Matplotlib"/>
 <meta property="og:description" content="Short version for index and feeds"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="/2010/12/my-super-post.html"/>
+<meta property="og:url" content="https://cavernadedados.com/2010/12/my-super-post.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2010-12-03 10:20:00+01:00"/>
 <meta property="article:modified_time" content="2010-12-05 19:30:00+01:00"/>
-<meta property="article:author" content="/author/hugo">
+<meta property="article:author" content="https://cavernadedados.com/author/hugo">
   <meta property="article:publisher" content="https://www.facebook.com/myprofile/" />
 <meta property="article:section" content="Python"/>
 <meta property="article:tag" content="pelican"/>
 <meta property="article:tag" content="publishing"/>
-<meta property="og:image" content="/assets/img/BG.jpg">
+<meta property="og:image" content="https://cavernadedados.com/assets/img/BG.jpg">
 
 <!-- Twitter Card -->
 
@@ -81,10 +81,10 @@
   "author": {
     "@type": "Person",
     "name": "hugo",
-    "url": "/author/hugo"
+    "url": "https://cavernadedados.com/author/hugo"
   },
-  "image": "/assets/img/BG.jpg",
-  "url": "/2010/12/my-super-post.html",
+  "image": "https://cavernadedados.com/assets/img/BG.jpg",
+  "url": "https://cavernadedados.com/2010/12/my-super-post.html",
   "description": "Short version for index and feeds"
 }
 </script>
@@ -98,7 +98,7 @@
     <p class="nav-label">Menu</p>
     <ul>
 
-              <li role="presentation"><a href="/pages/sobre/">Sobre o Caverna de Dados</a></li>
+              <li role="presentation"><a href="https://cavernadedados.com/pages/sobre/">Sobre o Caverna de Dados</a></li>
 
     </ul>
   </div>
@@ -114,7 +114,7 @@
       <div class="inner">
         <nav id="navigation">
             <span class="blog-logo">
-                <a href="/"><img src="/assets/img/logo.png" alt="Blog Logo" /></a>
+                <a href="https://cavernadedados.com/"><img src="/assets/img/logo.png" alt="Blog Logo" /></a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
@@ -123,12 +123,12 @@
         <h1 class="post-title">Como plotar Gráfico de Múltiplas Barras com Pandas e Matplotlib</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
-                <a href="/author/hugo">Hugo Trigueiro</a>
+                <a href="https://cavernadedados.com/author/hugo">Hugo Trigueiro</a>
             | <time datetime="sex 03 dezembro 2010">sex 03 dezembro 2010</time>
         </span>
         <!-- TODO : Modified check -->
             <span class="post-meta"> | Updated on dom 05 dezembro 2010</span>
-            <div class="post-cover cover" style="background-image: url('/assets/img/BG.jpg')">
+            <div class="post-cover cover" style="background-image: url('https://cavernadedados.com/assets/img/BG.jpg')">
       </div>
     </header>
 
@@ -145,7 +145,7 @@
 <p>Eu ainda estou engatinhando em Data Science, mas esta é uma área que eu tenho bastante interesse e estou me dedicando muito a aprender. Contudo, durante meus estudos, me deparei com um problema, que aparentemente é simples, mas que não encontrei nenhuma solução que realmente o resolvesse do jeito que eu desejava.</p>
 <p><strong>O tal problema era: Plotar um Gráfico de Múltiplas Barras com o Matplotlib.</strong></p>
 <p>Então, resolvi procurar algumas soluções. Olhei na documentação do Matplotlib e de fato encontrei uma resposta para isso, porém, que não me agradou muito. O formato de construção deste tipo de gráfico era uma quantidade enorme de código, além de pouco funcional, isto é, você precisa ficar adaptando todo o código aos seus dados em vez de ser algo simples. Dá uma olhada:</p>
-<p>https://matplotlib.org/examples/api/barchart_demo.html</p>
+<p><a href="https://matplotlib.org/examples/api/barchart_demo.html">Veja aqui</a></p>
 <p>Bom, continuei procurando outras soluções no StackOverflow, fóruns, blogs, mas não encontrei nenhuma função ou código que ajudasse a simplesmente plotar um gráfico de múltiplas barras a partir de um dataset qualquer.</p>
 <p>Após um bom tempo de pesquisa descobri que o próprio Pandas tem uma função construída com base no Matplotlib que plota um gráfico de barras múltiplas bem estruturado, porém para isso, os dados precisam estar organizados em um Dataframe.</p>
 <p>Então, resolvi criar uma pequena função que ajude a simplesmente selecionar o eixo X e Y do dataset a serem plotados, já organizando o dataframe através da soma e correspondência entre os valores, e deixar todo resto do trabalho para o Pandas.</p>
@@ -591,20 +591,20 @@ Neste caso serão:
 
             <section class="post-info">
                 <div class="post-share">
-                    <a class="twitter" href="https://twitter.com/share?text=Como plotar Gráfico de Múltiplas Barras com Pandas e Matplotlib&amp;url=/2010/12/my-super-post.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a class="twitter" href="https://twitter.com/share?text=Como plotar Gráfico de Múltiplas Barras com Pandas e Matplotlib&amp;url=https://cavernadedados.com/2010/12/my-super-post.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/2010/12/my-super-post.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://cavernadedados.com/2010/12/my-super-post.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a class="googleplus" href="https://plus.google.com/share?url=/2010/12/my-super-post.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a class="googleplus" href="https://plus.google.com/share?url=https://cavernadedados.com/2010/12/my-super-post.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
                     </a>
                     <div class="clear"></div>
                 </div>
 
                 <aside class="post-tags">
-<a href="/tag/pelican">pelican</a><a href="/tag/publishing">publishing</a>                </aside>
+<a href="https://cavernadedados.com/tag/pelican">pelican</a><a href="https://cavernadedados.com/tag/publishing">publishing</a>                </aside>
 
                 <div class="clear"></div>
 
@@ -612,10 +612,10 @@ Neste caso serão:
 
 
                         <figure class="post-author-avatar">
-                            <img src="/assets/img/hugo.jpg" alt="Hugo Trigueiro" />
+                            <img src="https://cavernadedados.com/assets/img/hugo.jpg" alt="Hugo Trigueiro" />
                         </figure>
                     <div class="post-author-bio">
-                        <h4 class="post-author-name"><a href="/author/hugo">Hugo Trigueiro</a></h4>
+                        <h4 class="post-author-name"><a href="https://cavernadedados.com/author/hugo">Hugo Trigueiro</a></h4>
                             <p class="post-author-about">É graduando em Economia na Universidade Federal do ABC e trabalha como Analista de Captação de Recursos em uma instituição do terceiro setor.</p>
                             <span class="post-author-location"><i class="ic ic-location"></i> São Paulo/SP</span>
                         <!-- Social linkes in alphabet order. -->
@@ -649,10 +649,10 @@ Neste caso serão:
     </footer>
   </section>
 
-  <script type="text/javascript" src="/theme/js/script.js"></script>
+  <script type="text/javascript" src="https://cavernadedados.com/theme/js/script.js"></script>
 
     <!-- Script specified by the user -->
-    <script type="text/javascript"  src="/assets/js/custom.js"></script>
+    <script type="text/javascript"  src="https://cavernadedados.com/assets/js/custom.js"></script>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136764041-1"></script>
     <script>
