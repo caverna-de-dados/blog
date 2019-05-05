@@ -11,9 +11,9 @@
   font-style: normal;
 }
 
-*, ::before, ::after {
+/**, ::before, ::after {
     box-sizing: border-box;
-}
+}*/
 
 table th, table td {
 	word-break: break-all;
