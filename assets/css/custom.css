@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+/**, ::before, ::after {
+    box-sizing: border-box;
+}*/
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'NexaRustSans-Black';
 	font-size: 35px;
@@ -47,4 +51,8 @@ h1, h2, h3, h4, h5, h6 {
 
 div .highlight {
 	font-size: 16px;
+}
+
+table th, table td {
+	word-break: break-all;
 }
