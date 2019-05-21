@@ -83,7 +83,7 @@ AUTHORS_SAVE_AS = 'authors.html'
 ### Plugins
 
 PLUGIN_PATHS = [
-  '/home/diego/Desktop/repos/blog/plugins'
+  'plugins'
 ]
 
 # PLUGINS = [
