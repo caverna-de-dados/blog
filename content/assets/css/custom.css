@@ -11,6 +11,23 @@
   font-style: normal;
 }
 
+/**, ::before, ::after {
+    box-sizing: border-box;
+}*/
+
+table th, table td {
+	word-break: break-all;
+	font-size: 0.75em;
+}
+
+table {
+	width: 800px;
+}
+
+.content .post .inner {
+	overflow-x: auto !important;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'NexaRustSans-Black';
 	font-size: 35px;
@@ -43,4 +60,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-logo a img {
 	opacity: 0.4;
+}
+
+div .highlight {
+	font-size: 16px;
 }
