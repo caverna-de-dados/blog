@@ -16,12 +16,13 @@
 }*/
 
 table th, table td {
-	word-break: break-all;
+	/*word-break: break-all;*/
 	font-size: 0.75em;
 }
 
 table {
 	width: 800px;
+	margin: 1px 0;
 }
 
 .content .post .inner {
@@ -64,4 +65,12 @@ h1, h2, h3, h4, h5, h6 {
 
 div .highlight {
 	font-size: 16px;
+}
+
+ul {
+    list-style: initial;
+}
+
+ul>li:before {
+	content: none;
 }

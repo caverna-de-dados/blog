@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+  <title>Estatística Descritiva com Python</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <!-- <link href="/" rel="canonical" /> -->
+  <meta property="fb:app_id" content="87741124305" />
+
+  <!-- Feed -->
+
+  <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="/theme/css/code_blocks/github.css" rel="stylesheet">
+
+    <!-- CSS specified by the user -->
+
+
+    <link href="/assets/css/custom.css" type="text/css" rel="stylesheet" />
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+  <link href="/2019/05/estatistica-descritiva-com-python.html" rel="canonical" />
+
+    <meta name="description" content="Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas, Numpy e Matplotlib.">
+
+    <meta name="author" content="hugo">
+
+    <meta name="tags" content="Python">
+    <meta name="tags" content="Estatística">
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Caverna de Dados"/>
+<meta property="og:title" content="Estatística Descritiva com Python"/>
+<meta property="og:description" content="Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas, Numpy e Matplotlib."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/2019/05/estatistica-descritiva-com-python.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-05-23 00:00:00+02:00"/>
+<meta property="article:modified_time" content="2019-05-23 00:00:00+02:00"/>
+<meta property="article:author" content="/author/hugo">
+  <meta property="article:publisher" content="https://www.facebook.com/myprofile/" />
+<meta property="article:section" content="Tutoriais"/>
+<meta property="article:tag" content="Python"/>
+<meta property="article:tag" content="Estatística"/>
+<meta property="og:image" itemprop="image" content="/assets/img/post-2/giphy.webp">
+<meta property="og:image:secure_url" itemprop="image" content="/assets/img/post-2/giphy.webp">
+<meta property="og:image:width" content="400" /> 
+<meta property="og:image:height" content="300" />
+
+<!-- Twitter Card -->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "Estatística Descritiva com Python",
+  "headline": "Estatística Descritiva com Python",
+  "datePublished": "2019-05-23 00:00:00+02:00",
+  "dateModified": "2019-05-23 00:00:00+02:00",
+  "author": {
+    "@type": "Person",
+    "name": "hugo",
+    "url": "/author/hugo"
+  },
+  "image": "/assets/img/post-2/giphy.webp",
+  "url": "/2019/05/estatistica-descritiva-com-python.html",
+  "description": "Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas, Numpy e Matplotlib."
+}
+</script>
+</head>
+<!-- TODO : Body class -->
+<body class="home-template">
+
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
+
+              <li role="presentation"><a href="/pages/sobre/">Sobre o Caverna de Dados</a></li>
+
+    </ul>
+  </div>
+</nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="blog-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span class="blog-logo">
+                <a href="/"><img src="/assets/img/logo.png" alt="Blog Logo" /></a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Estatística Descritiva com Python</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="/author/hugo">Hugo Trigueiro</a>
+            | <time datetime="qui 23 maio 2019">qui 23 maio 2019</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <span class="post-meta"> | Updated on qui 23 maio 2019</span>
+            <div class="post-cover cover" style="background-image: url('/assets/img/post-2/giphy.webp')">
+      </div>
+    </header>
+
+  <section id="wrapper">
+    <a class="hidden-close"></a>
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <p>A Estatística pode ser definida de forma simplificada e resumida, como: uma subárea da Matemática que busca estudar, descrever, interpretar e organizar a informação, através da coleta, descrição e análise de dados.</p>
+<p>Assim, obviamente, a Estatística é considerada um dos pilares fundamentais em Data Science, juntamente com a parte de Tecnologia e Negócios.</p>
+<p>Neste post, vamos ver e aplicar através da linguagem Python alguns dos conceitos mais básicos da Estatística Descritiva, uma das subdivisões da Estatística, responsável principalmente pelo resumo e descrição da informação.</p>
+<p>Para isso, vamos utilizar alguns dos principais pacotes open-source e gratuitos voltados à análise de dados que compõem a <strong>Toolbox de um Data Scientist</strong>. São eles: Pandas, Numpy e Matplotlib.</p>
+<p>Também utilizaremos para aplicar os conceitos o Dataset da famosa <a href="https://www.kaggle.com/c/titanic">Competição do Titanic</a> no Kaggle (Titanic: Machine Learning from Disaster).</p>
+<p>Para auxiliar na estrutura do post, vou estar me baseando no excelente livro Estatística Básica, do professor adjunto da Escola de Administração de Empresas da FGV, Wilton Bussab, e do professor titular do Instituto de Matemática e Estatística da Universidade de São Paulo (IME), Pedro Morettin. Todas as demais referências, links e materiais estarão ao final do post.</p>
+<p>Então chega de conversa. Vamos lá!</p>
+<h2>Sumário</h2>
+<ol>
+<li><a href="#prepare">Preparação dos Pacotes e Dataset</a></li>
+<li><a href="#data-resume">Resumo de Dados</a></li>
+<li><a href="#meansures-resume">Medidas Resumo</a></li>
+<li><a href="#references">Referências</a></li>
+</ol>
+<h2>Preparação dos Pacotes e Dataset<a name="prepare"></a></h2>
+<p>Antes de começar qualquer coisa, precisamos importar os pacotes que utilizaremos, que serão:</p>
+<ul>
+<li>
+<p>Pandas. Pandas um poderoso pacote de análise de dados com linguagem Python, ele permite, por exemplo, que trabalhemos facilmente com Dataframes, consigamos informações estatísticas das nossas variáveis e até mesmo plotar gráficos.</p>
+</li>
+<li>
+<p>Numpy. O Numpy é um pacote voltado para computação científica com Python, possui um objeto array N-dimensional que facilita a manipulação de matrizes, sendo fundamental para a Álgebra Linear.</p>
+</li>
+<li>
+<p>Matplotlib. O Matplotlib é uma das principais bibliotecas para plotar gráficos em Python, com ele é possível, por exemplo, plotar gráficos de linha, barra, setor, histogramas e até graficos em 3D.</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="c1"># O comando abaixo é um comando específico do Jupyter Notebook, ele é utilizado para que o Matplotlib não abra uma nova página para plotar os gráficos e plote no output da célula.</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</pre></div>
+
+
+<p>Agora que já importamos o Pandas, vamos usar a função pd.read_csv() para importar o Dataset da Competição do Titanic, apenas o arquivo "train.csv" de teste já é suficiente para o que precisamos e salva-lo na variável df. Após isso, vamos utilizar o método .head() para visualizar os primeiros registros dos dados.</p>
+<div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Braund, Mr. Owen Harris</td>
+      <td>male</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>7.2500</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>71.2833</td>
+      <td>C85</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen, Miss. Laina</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>7.9250</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+      <td>female</td>
+      <td>35.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>53.1000</td>
+      <td>C123</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Allen, Mr. William Henry</td>
+      <td>male</td>
+      <td>35.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373450</td>
+      <td>8.0500</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Resumo de Dados<a name="data-resume"></a></h2>
+<ul>
+<li><strong>Distribuição de Frequências</strong></li>
+</ul>
+<p>Quando estamos falando de Estatística Descritiva, estamos buscando compreender melhor o comportamento das nossas variáveis.</p>
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
+<h2>Medidas Resumo<a name="meansures-resume"></a></h2>
+<ul>
+<li>
+<p><strong>Medidas de Posição</strong></p>
+<ul>
+<li>Moda</li>
+<li>Mediana</li>
+<li>Média</li>
+</ul>
+</li>
+<li>
+<p><strong>Medidas de Dispersão</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
+<h2>Referências<a name="references"></a></h2>
+<ul>
+<li>
+<p>Estatística Básica - Bussab &amp; Morettin</p>
+</li>
+<li>
+<p>https://www.kaggle.com/c/titanic</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
+<hr>
+<h1>ROTEIRO - POST ESTATÍSTICA BÁSICA</h1>
+<h2>Introdução</h2>
+<ul>
+<li>Apresentar o objetivo do post</li>
+<li>Explicar o que é Estatística Descritiva</li>
+<li>Pacotes Usados</li>
+<li>Falar sobre as referências</li>
+</ul>
+<h2>Resumo de Dados</h2>
+<h4>Distribuição de frequências</h4>
+<ul>
+<li>Distribuição de Frequências= .value_counts() pandas</li>
+<li>Frequência acumulada (pg 47)</li>
+<li>Uso de gráficos de barras e setores ("pizza") para resumir a distribuição de frequências para variáveis QUALITATIVAS</li>
+<li>Para variáveis QUANTITATIVAS, além das formas das qualitativas também temos o Histograma</li>
+</ul>
+<h2>Medidas - Resumo</h2>
+<h4>Medidas de Posição</h4>
+<ul>
+<li>Moda</li>
+<li>Mediana</li>
+<li>Média</li>
+</ul>
+<h4>Medidas de Dispersão</h4>
+<hr>
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>
+</pre></div>
+            </section>
+
+            <section class="post-info">
+                <div class="post-share">
+                    <a class="twitter" href="https://twitter.com/share?text=Estatística Descritiva com Python&amp;url=/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
+                    </a>
+                    <a class="googleplus" href="https://plus.google.com/share?url=/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+
+                <aside class="post-tags">
+<a href="/tag/python">Python</a><a href="/tag/estatistica">Estatística</a>                </aside>
+
+                <div class="clear"></div>
+
+                <aside class="post-author">
+
+
+                        <figure class="post-author-avatar">
+                            <img src="/assets/img/hugo.jpg" alt="Hugo Trigueiro" />
+                        </figure>
+                    <div class="post-author-bio">
+                        <h4 class="post-author-name"><a href="/author/hugo">Hugo Trigueiro</a></h4>
+                            <p class="post-author-about">É graduando em Economia na Universidade Federal do ABC e trabalha como Analista de Captação de Recursos em uma instituição do terceiro setor.</p>
+                            <span class="post-author-location"><i class="ic ic-location"></i> São Paulo/SP</span>
+                        <!-- Social linkes in alphabet order. -->
+                            <span class="post-author-linkedin"><a target="_blank" href="https://www.linkedin.com/in/hugo-trigueiro"><i class="ic ic-link"></i> LinkedIn</a></span>
+                    </div>
+                    <div class="clear"></div>
+                </aside>
+
+                </section>
+
+
+                <aside class="post-nav">
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
+
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+
+
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script type="text/javascript" src="/theme/js/script.js"></script>
+
+    <!-- Script specified by the user -->
+    <script type="text/javascript"  src="/assets/js/custom.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136764041-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-136764041-1', { 'anonymize_ip': true });
+    </script>
+</body>
+</html>
