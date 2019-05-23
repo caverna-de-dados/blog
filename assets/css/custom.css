@@ -21,11 +21,15 @@ table th, table td {
 }
 
 table {
-	width: 800px;
+	max-width: 800px;
 	margin: 1px 0;
 }
 
 .content .post .inner {
+	overflow-x: auto !important;
+}
+
+.content .post .inner section div {
 	overflow-x: auto !important;
 }
 

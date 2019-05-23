@@ -151,18 +151,11 @@
 <p>Também utilizaremos para aplicar os conceitos o Dataset da famosa <a href="https://www.kaggle.com/c/titanic">Competição do Titanic</a> no Kaggle (Titanic: Machine Learning from Disaster).</p>
 <p>Para auxiliar na estrutura do post, vou estar me baseando no excelente livro Estatística Básica, do professor adjunto da Escola de Administração de Empresas da FGV, Wilton Bussab, e do professor titular do Instituto de Matemática e Estatística da Universidade de São Paulo (IME), Pedro Morettin. Todas as demais referências, links e materiais estarão ao final do post.</p>
 <p>Então chega de conversa. Vamos lá!</p>
-<h2>Sumário</h2>
-<ol>
-<li><a href="#prepare">Preparação dos Pacotes e Dataset</a></li>
-<li><a href="#data-resume">Resumo de Dados</a></li>
-<li><a href="#meansures-resume">Medidas Resumo</a></li>
-<li><a href="#references">Referências</a></li>
-</ol>
-<h2>Preparação dos Pacotes e Dataset<a name="prepare"></a></h2>
+<h2>Preparação dos Pacotes e Dataset</h2>
 <p>Antes de começar qualquer coisa, precisamos importar os pacotes que utilizaremos, que serão:</p>
 <ul>
 <li>
-<p>Pandas. Pandas um poderoso pacote de análise de dados com linguagem Python, ele permite, por exemplo, que trabalhemos facilmente com Dataframes, consigamos informações estatísticas das nossas variáveis e até mesmo plotar gráficos.</p>
+<p>Pandas. Pandas é um poderoso pacote de análise de dados com linguagem Python, ele permite, por exemplo, que trabalhemos facilmente com Dataframes, consigamos informações estatísticas das nossas variáveis e até mesmo plotar gráficos.</p>
 </li>
 <li>
 <p>Numpy. O Numpy é um pacote voltado para computação científica com Python, possui um objeto array N-dimensional que facilita a manipulação de matrizes, sendo fundamental para a Álgebra Linear.</p>
@@ -179,7 +172,8 @@
 </pre></div>
 
 
-<p>Agora que já importamos o Pandas, vamos usar a função pd.read_csv() para importar o Dataset da Competição do Titanic, apenas o arquivo "train.csv" de teste já é suficiente para o que precisamos e salva-lo na variável df. Após isso, vamos utilizar o método .head() para visualizar os primeiros registros dos dados.</p>
+<p>Agora que já importamos os pacotes, vamos usar a função <code>pd.read_csv()</code> do Pandas para importar o Dataset da Competição do Titanic e salvá-lo na variável <code>df</code>. Apenas o arquivo "train.csv" de teste já é suficiente para o que precisamos.</p>
+<p>Após isso, vamos utilizar o método <code>.head()</code> para visualizar os cinco primeiros registros do nosso Dataframe.</p>
 <div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;train.csv&#39;</span><span class="p">)</span>
 <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -297,11 +291,93 @@
 </table>
 </div>
 
-<h2>Resumo de Dados<a name="data-resume"></a></h2>
+<h2>Resumo de Dados</h2>
 <ul>
 <li><strong>Distribuição de Frequências</strong></li>
 </ul>
-<p>Quando estamos falando de Estatística Descritiva, estamos buscando compreender melhor o comportamento das nossas variáveis.</p>
+<p>Bom, quando falamos de Estatística Descritiva, estamos buscando compreender melhor o comportamento das variáveis com que estamos trabalhando. Um dos conceitos mais básicos empregado nesta tarefa é a noção de <strong><em>Distribuição de Frequências,</em></strong> que procura resumir o comportamento de uma variável pela contabilização da frequência dos atributos contidos nela.</p>
+<p>Vamos obter a <em>distribuição de frequências</em> das variáveis Pclass, que se refere a classe socioeconômica da tripulação do Titanic, e Survived, que indica quem sobreviveu ou não ao naufrágio.</p>
+<p>Podemos obter a <em>distribuição de frequências</em> de uma variável tanto com Pandas quanto Numpy. Com Pandas, podemos simplesmente utilizar o método <code>.value_counts()</code></p>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3</th>
+      <td>491</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>216</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>184</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>549</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>342</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <div class="highlight"><pre><span></span>
 </pre></div>
 
@@ -310,7 +386,7 @@
 </pre></div>
 
 
-<h2>Medidas Resumo<a name="meansures-resume"></a></h2>
+<h2>Medidas Resumo</h2>
 <ul>
 <li>
 <p><strong>Medidas de Posição</strong></p>
@@ -328,7 +404,7 @@
 </pre></div>
 
 
-<h2>Referências<a name="references"></a></h2>
+<h2>Referências</h2>
 <ul>
 <li>
 <p>Estatística Básica - Bussab &amp; Morettin</p>
