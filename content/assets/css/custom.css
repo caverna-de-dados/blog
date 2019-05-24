@@ -11,21 +11,27 @@
   font-style: normal;
 }
 
-/**, ::before, ::after {
-    box-sizing: border-box;
-}*/
+pre {
+    margin: 0px auto 30px;
+    background-color: #e6e3e3;
+    border: none;
+}
 
 table th, table td {
-	word-break: break-all;
 	font-size: 0.75em;
 }
 
-table {
-	width: 800px;
+.dataframe {
+	max-width: 800px;
+    margin: 1px 0;
 }
 
 .content .post .inner {
 	overflow-x: auto !important;
+}
+
+.content .post .inner section div {
+	overflow-x: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,4 +70,12 @@ h1, h2, h3, h4, h5, h6 {
 
 div .highlight {
 	font-size: 16px;
+}
+
+ul {
+    list-style: initial;
+}
+
+ul>li:before {
+	content: none;
 }
