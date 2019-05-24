@@ -12,12 +12,12 @@
 }
 
 pre {
-    /*margin: 30px auto 10px;*/
     margin: 0px auto 30px;
+    background-color: #e6e3e3;
+    border: none;
 }
 
 table th, table td {
-	/*word-break: break-all;*/
 	font-size: 0.75em;
 }
 
