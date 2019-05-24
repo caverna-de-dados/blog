@@ -11,21 +11,44 @@
   font-style: normal;
 }
 
+/*INPUTS AND OUTPUTS*/
 pre {
     margin: 0px auto 30px;
-    background-color: #e6e3e3;
+    /*background-color: #e6e3e3;*/
+    background-color: #f7e5e5;
     border: none;
 }
-
+.dataframe thead tr {
+    background-color: #dadada;
+}
+.dataframe thead tr th {
+    border: 1px solid #b5b4b4;
+}
 table th, table td {
 	font-size: 0.75em;
 }
-
+table td {
+    border: 1px solid #cecece;
+}
 .dataframe {
 	max-width: 800px;
-    margin: 1px 0;
+    margin: 0px 0px 1px 0px;
+    border: 0px solid #e5e4e1;
+    width: 99.9%;
 }
-
+.highlight .s1 {
+ 	color: #ff245c;
+}
+.highlight .bp, .highlight .kn {
+    color: #4fb11f;
+}
+.highlight .nn {
+    color: #fff;
+}
+.highlight .n {
+     color: #fff !important;
+}
+/*GENERAL*/
 .content .post .inner {
 	overflow-x: auto !important;
 }
