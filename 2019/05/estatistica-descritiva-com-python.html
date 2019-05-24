@@ -378,6 +378,280 @@
 </table>
 </div>
 
+<p>Usando apenas o método <code>.value_counts()</code>sem nenhum parâmetro, conseguimos obter a frequência de cada atributo da variável, ou seja, a <em>distribuição de frequência absoluta</em>. Se quisermos saber qual a <em>distribuição de frequência relativa</em>, isto é, quanto cada atributo representa no total de registros da variável, podemos passar o parâmetro <code>.value_counts(normalize=True)</code></p>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3</th>
+      <td>0.551066</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.242424</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.206510</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.616162</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.383838</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Também podemos obter a <em>distribuição de frequências</em>, absoluta e relativa de uma variável, usando o Numpy.</p>
+<div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>(array([1, 2, 3], dtype=int64), array([216, 184, 491], dtype=int64))
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">values</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Pclass&#39;</span><span class="p">:</span> <span class="n">freq</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>216</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>184</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>491</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>(array([0, 1], dtype=int64), array([549, 342], dtype=int64))
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">values</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Survived&#39;</span><span class="p">:</span> <span class="n">freq</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Survived</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.616162</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.383838</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Também podemos obter a <em>distribuição de frequências acumulada</em> utilizando o método <code>.cumsum()</code> com Pandas, e a função, de mesmo nome, <code>np.cumsum()</code> com Numpy.</p>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">sort</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">cumsum</span><span class="p">())</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>216</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>891</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span><span class="n">values</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Pclass&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">freq</span><span class="p">)},</span> <span class="n">index</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pclass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>216</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>891</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>
+</pre></div>
+
+
 <div class="highlight"><pre><span></span>
 </pre></div>
 

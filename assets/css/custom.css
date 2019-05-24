@@ -11,18 +11,19 @@
   font-style: normal;
 }
 
-/**, ::before, ::after {
-    box-sizing: border-box;
-}*/
+pre {
+    /*margin: 30px auto 10px;*/
+    margin: 0px auto 20px;
+}
 
 table th, table td {
 	/*word-break: break-all;*/
 	font-size: 0.75em;
 }
 
-table {
+.dataframe {
 	max-width: 800px;
-	margin: 1px 0;
+    margin: 1px 0 20px;
 }
 
 .content .post .inner {
@@ -30,7 +31,7 @@ table {
 }
 
 .content .post .inner section div {
-	overflow-x: auto !important;
+	overflow-x: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
