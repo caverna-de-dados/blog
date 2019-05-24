@@ -23,7 +23,7 @@ table th, table td {
 
 .dataframe {
 	max-width: 800px;
-    margin: 1px 0;
+    margin: 1px -1px;
 }
 
 .content .post .inner {
