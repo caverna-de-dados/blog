@@ -180,6 +180,21 @@ Podemos obter a *distribuição de frequências* de uma variável tanto com Pand
 
 
 ```python
+df['Pclass'].value_counts()
+```
+
+
+
+
+    3    491
+    1    216
+    2    184
+    Name: Pclass, dtype: int64
+
+
+
+
+```python
 pd.DataFrame(df['Pclass'].value_counts())
 ```
 

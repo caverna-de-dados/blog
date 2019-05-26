@@ -13,22 +13,28 @@
 
 /*INPUTS AND OUTPUTS*/
 pre {
-    margin: 0px auto 30px;
-    /*background-color: #e6e3e3;*/
-    background-color: #f7e5e5;
+    margin: 0px auto 35px;
     border: none;
+    padding: 8px 10px;
+    color: #fff;
 }
 .dataframe thead tr {
-    background-color: #dadada;
+    background-color: #fff1f1;
+}
+.dataframe tbody tr:hover {
+    background-color: #fff1f1;
 }
 .dataframe thead tr th {
     border: 1px solid #b5b4b4;
+    font-family: 'Georgia', sans-serif;
+    font-weight: 600;
+}
+.dataframe tbody {
+	background-color: #fff;
 }
 table th, table td {
 	font-size: 0.75em;
-}
-table td {
-    border: 1px solid #cecece;
+	border: 1px solid #cecece;
 }
 .dataframe {
 	max-width: 800px;
@@ -46,9 +52,15 @@ table td {
     color: #fff;
 }
 .highlight .n {
-     color: #fff !important;
+     color: #fff;
+}
+.highlight .o {
+	color: #268cf9;
 }
 /*GENERAL*/
+body {
+	font-family: 'Georgia', sans-serif;
+}
 .content .post .inner {
 	overflow-x: auto !important;
 }
