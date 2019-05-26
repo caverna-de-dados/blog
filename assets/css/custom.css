@@ -59,6 +59,11 @@ table th, table td {
 .highlight .o {
 	color: #268cf9;
 }
+.post-content img {
+	width: 80%;
+	display: block;
+    margin: 0 auto;
+}
 /*GENERAL*/
 body {
 	font-family: 'Georgia', sans-serif;
