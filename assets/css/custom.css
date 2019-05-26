@@ -34,9 +34,7 @@ pre {
 }
 table th, table td {
 	font-size: 0.75em;
-}
-table td {
-    border: 1px solid #cecece;
+	border: 1px solid #cecece;
 }
 .dataframe {
 	max-width: 800px;
