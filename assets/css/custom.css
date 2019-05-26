@@ -16,7 +16,9 @@ pre {
     margin: 0px auto 35px;
     border: none;
     padding: 8px 10px;
-    color: #fff;
+    color: #343642;
+    background-color: #fff;
+	white-space: pre-wrap;
 }
 .dataframe thead tr {
     background-color: #fff1f1;
