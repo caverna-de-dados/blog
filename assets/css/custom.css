@@ -20,6 +20,16 @@ pre {
     background-color: #fff;
 	white-space: pre-wrap;
 }
+.pre-style {
+	border: 1px solid #DEDEDE;
+	margin: 10px auto 3px;
+	background-color: rgb(255, 251, 251);
+	background-color: #191919;
+	color: #fff;
+	padding: 10px 10px;
+	white-space: pre;
+	border-radius: 6px;
+}
 .dataframe thead tr {
     background-color: #fff1f1;
 }
