@@ -598,20 +598,32 @@ pd.DataFrame({'Pclass': np.cumsum(freq)}, index=values)
 
 
 
-
-```python
-
-```
+- **Histogramas**
 
 
 ```python
-
+plt.hist(df['Age'][df['Age'].notna()], bins='auto')
+plt.grid(True)
+plt.xlabel('Idade')
+plt.ylabel('Frequência')
+plt.show()
 ```
+
+
+![png]({static}/assets/img/post-2/output_22_0.png)
+
 
 
 ```python
-
+(min(df['Age']), max(df['Age']))
 ```
+
+
+
+
+    (0.42, 80.0)
+
+
 
 
 ```python

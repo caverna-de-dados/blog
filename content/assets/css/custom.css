@@ -16,7 +16,19 @@ pre {
     margin: 0px auto 35px;
     border: none;
     padding: 8px 10px;
-    color: #fff;
+    color: #343642;
+    background-color: #fff;
+	white-space: pre-wrap;
+}
+.pre-style {
+	border: 1px solid #DEDEDE;
+	margin: 10px auto 3px;
+	background-color: rgb(255, 251, 251);
+	background-color: #191919;
+	color: #fff;
+	padding: 10px 10px;
+	white-space: pre;
+	border-radius: 6px;
 }
 .dataframe thead tr {
     background-color: #fff1f1;
@@ -56,6 +68,11 @@ table th, table td {
 }
 .highlight .o {
 	color: #268cf9;
+}
+.post-content img {
+	width: 90%;
+	display: block;
+    margin: 0 auto;
 }
 /*GENERAL*/
 body {
