@@ -1,3 +1,12 @@
+// CONFIGURAÇÕES
+var canonic = $("link[rel='canonical']");
+
+if (canonic.length == 0) {
+	$( "head" ).prepend( "<link href='https://cavernadedados.com/' rel='canonical'/>" );
+}
+
+
+// AJUSTES DE LAYOUT E DESIGN DAS TAGS 'PRE', USADAS PARA CÓDIGOS
 $( ".hll, .n, .c, .err, .s1, .ss, .bp, .vc, .vg, .vi, .il" ).parent( "pre" ).addClass("pre-style");
 $( ".dataframe" ).parent( "div" ).css( "margin-bottom", "35px" );
 
