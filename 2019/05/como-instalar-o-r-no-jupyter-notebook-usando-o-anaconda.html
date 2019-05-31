@@ -130,10 +130,10 @@
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="https://cavernadedados.com/author/hugo">Hugo Trigueiro</a>
-            | <time datetime="ter 07 maio 2019">ter 07 maio 2019</time>
+            | <time datetime="Tue 07 May 2019">Tue 07 May 2019</time>
         </span>
         <!-- TODO : Modified check -->
-            <span class="post-meta"> | Updated on ter 07 maio 2019</span>
+            <span class="post-meta"> | Updated on Tue 07 May 2019</span>
             <div class="post-cover cover" style="background-image: url('https://cavernadedados.com/assets/img/post-1/anaconda.jpg')">
       </div>
     </header>
@@ -157,12 +157,12 @@
 <p>Ao utilizar um novo environment, você terá um novo ambiente apenas para o armazenamento e organização dos pacotes de R, isso pode ajudar caso no futuro você queira deixar esse ambiente ainda mais robusto e customizado. Ainda assim, não há nenhum problema em usar o mesmo envinroment para os pacotes de Python e R.</p>
 <p>Então, no prompt do Anaconda:</p>
 <p>Para instalar o "R Essentials" no seu <strong>environment atual</strong>, utilize o comando:</p>
-<div class="highlight"><pre><span></span>conda install -c r r-essentials 
+<div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="k">c</span> <span class="n">r</span> <span class="n">r</span><span class="o">-</span><span class="n">essentials</span> 
 </pre></div>
 
 
 <p>Caso você queira criar um <strong>novo environment</strong>, basta usar o comando abaixo (para explicitar o interpretador do R como padrão, adicionamos o r-base  ao final do comando):</p>
-<div class="highlight"><pre><span></span>conda create -n r_env r-essentials r-base
+<div class="highlight"><pre><span></span><span class="n">conda</span> <span class="k">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">r_env</span> <span class="n">r</span><span class="o">-</span><span class="n">essentials</span> <span class="n">r</span><span class="o">-</span><span class="n">base</span>
 </pre></div>
 
 
@@ -171,20 +171,20 @@
 <p>Se você instalou o "R Essentials" no seu environment corrente, então basta abrir o Jupyter Notebook e você já verá a linguagem R disponível.</p>
 <p><img alt="Imagem retirada do site do Anaconda: https://docs.anaconda.com/anaconda/navigator/tutorials/r-lang/" src="https://cavernadedados.com/assets/img/post-1/jupyter.jpg"></p>
 <p>Caso você tenha usado um novo environment, então é necessário ativá-lo antes de abrir o Jupyter Notebook.</p>
-<div class="highlight"><pre><span></span>conda activate r_env
-jupyter notebook
+<div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">r_env</span>
+<span class="n">jupyter</span> <span class="n">notebook</span>
 </pre></div>
 
 
 <p>Agora é só criar um novo notebook com a linguagem R. Vamos fazer alguns testes apenas para confirmar que está tudo funcionando bem.</p>
 <p>Vamos chamar o pacote dplyr:</p>
-<div class="highlight"><pre><span></span><span class="kn">library</span><span class="p">(</span>dplyr<span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 </pre></div>
 
 
 <p><img alt="Screenshot at 12-37-43" src="https://cavernadedados.com/assets/img/post-1/library.jpg"></p>
 <p>Podemos usar agora o famoso dataset Iris:</p>
-<div class="highlight"><pre><span></span>iris
+<div class="highlight"><pre><span></span><span class="n">iris</span>
 </pre></div>
 
 
