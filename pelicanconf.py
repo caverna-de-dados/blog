@@ -148,6 +148,16 @@ AUTHORS_BIO = {
     "github": "arulrajnet",
     "location": "São Paulo/SP",
     "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
+  },
+  "leonam": {
+    "name": "Leonam Mendonça",
+    "cover": "assets/img/bg-leonam.jpg",
+    "image": "assets/img/leonam.jpg",
+    #"website": "http://blog.arulraj.net",
+    "linkedin": "leonammendonca",
+    "github": "leonammp",
+    "location": "Campos do Jordão/SP",
+    "bio": "É graduando em Análise e Desenvolvimento de Sistemas no  Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP), freelancer de desenvolvimento web e encantado por segurança da informação e perícia computacional."
   }
 }
 
