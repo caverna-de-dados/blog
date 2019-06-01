@@ -135,15 +135,15 @@ AUTHORS_BIO = {
     "image": "assets/img/hugo.jpg",
     # "website": "http://blog.arulraj.net",
     "linkedin": "hugo-trigueiro",
-    # "github": "arulrajnet",
+    "github": "hugotrigueiro",
     "location": "São Paulo/SP",
     "bio": "É graduando em Economia na Universidade Federal do ABC e trabalha como Analista de Captação de Recursos em uma instituição do terceiro setor."
   }, 
   "diego": {
     "name": "Diego Zurita",
-    "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
+    "cover": "assets/img/bg-zurita.jpg",
     "image": "assets/img/diego.jpg",
-    "website": "http://blog.arulraj.net",
+    # "website": "http://blog.arulraj.net",
     "linkedin": "diego-zurita-067775110",
     "github": "arulrajnet",
     "location": "São Paulo/SP",
@@ -157,7 +157,7 @@ AUTHORS_BIO = {
     "linkedin": "leonammendonca",
     "github": "leonammp",
     "location": "Campos do Jordão/SP",
-    "bio": "É graduando em Análise e Desenvolvimento de Sistemas no  Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP), freelancer de desenvolvimento web e encantado por segurança da informação e perícia computacional."
+    "bio": "É graduando em Análise e Desenvolvimento de Sistemas no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP), freelancer de desenvolvimento web e encantado por segurança da informação e perícia computacional."
   }
 }
 
