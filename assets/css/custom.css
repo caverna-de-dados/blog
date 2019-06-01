@@ -74,6 +74,8 @@ table th, table td {
 	display: block;
     margin: 0 auto;
 }
+
+
 /*GENERAL*/
 body {
 	font-family: 'Georgia', sans-serif;
@@ -113,6 +115,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.post-title {
 		font-size: 30px;
+	}
+	#blog-author .post-author-name {
+		font-size: 20px;
 	}
 }
 
