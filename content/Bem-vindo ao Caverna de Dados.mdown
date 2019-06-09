@@ -3,7 +3,7 @@ Date: 2019-05-07 00:00
 Modified: 2019-05-07 00:00
 Slug: bem-vindo-ao-caverna-de-dados
 Authors: hugo, diego, leonam
-Summary: Bem-vindo ao Blog Caverna de Dados! Esperamos que aqui você possa encontrar ao menos alguma coisa que agregue em seu conhecimento e que também possa se divertir lendo Data Science, Machine Learning, Estatística e muitos outros temas.
+Summary: Bem-vindo ao Blog Caverna de Dados! Esperamos que aqui você possa encontrar ao menos alguma coisa que agregue em seu conhecimento e que também possa se divertir lendo sobre Data Science, Machine Learning, Estatística e muitos outros temas.
 
 O blog Caverna de Dados é uma iniciativa dos mineradores Diego Zurita, graduando em Ciência da Computação na Universidade de São Paulo (USP), e Hugo Trigueiro, graduando em Economia na Universidade Federal do ABC (UFABC).
 
