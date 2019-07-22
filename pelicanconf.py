@@ -145,9 +145,9 @@ AUTHORS_BIO = {
     "image": "assets/img/diego.jpg",
     # "website": "http://blog.arulraj.net",
     "linkedin": "diego-zurita-067775110",
-    "github": "arulrajnet",
+    "github": "DiegoZurita",
     "location": "São Paulo/SP",
-    "bio": "This is the place for a small biography with max 200 characters. Well, now 100 are left. Cool, hugh?"
+    "bio": "Gosto de F1, dados, matemática, programação e aprendo frameworks por diversão"
   },
   "leonam": {
     "name": "Leonam Mendonça",
