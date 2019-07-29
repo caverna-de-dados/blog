@@ -7,29 +7,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 
-  <title>Estatística Descritiva com Python</title>
+  <title>Estatística Descritiva com Python (Parte 1)</title>
 
 
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="origin" />
   <meta name="generator" content="Pelican" />
-  <!-- <link href="https://cavernadedados.com/" rel="canonical" /> -->
+  <!-- <link href="/" rel="canonical" /> -->
   <meta property="fb:app_id" content="87741124305" />
 
   <!-- Feed -->
-        <link href="https://cavernadedados.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Caverna de Dados Full Atom Feed" />
-          <link href="https://cavernadedados.com/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="Caverna de Dados Categories Atom Feed" />
 
-  <link href="https://cavernadedados.com/theme/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="/theme/css/style.css" type="text/css" rel="stylesheet" />
 
   <!-- Code highlight color scheme -->
-      <link href="https://cavernadedados.com/theme/css/code_blocks/monokai.css" rel="stylesheet">
+      <link href="/theme/css/code_blocks/monokai.css" rel="stylesheet">
 
     <!-- CSS specified by the user -->
 
 
-    <link href="https://cavernadedados.com/assets/css/custom.css" type="text/css" rel="stylesheet" />
+    <link href="/assets/css/custom.css" type="text/css" rel="stylesheet" />
 
   <!-- Custom fonts -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
@@ -43,9 +41,9 @@
   <![endif]-->
 
 
-  <link href="https://cavernadedados.com/2019/05/estatistica-descritiva-com-python.html" rel="canonical" />
+  <link href="/2019/05/estatistica-descritiva-com-python.html" rel="canonical" />
 
-    <meta name="description" content="Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas, Numpy e Matplotlib.">
+    <meta name="description" content="Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas e Matplotlib.">
 
     <meta name="author" content="hugo">
 
@@ -57,20 +55,20 @@
 
 <!-- Open Graph -->
 <meta property="og:site_name" content="Caverna de Dados"/>
-<meta property="og:title" content="Estatística Descritiva com Python"/>
-<meta property="og:description" content="Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas, Numpy e Matplotlib."/>
+<meta property="og:title" content="Estatística Descritiva com Python (Parte 1)"/>
+<meta property="og:description" content="Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas e Matplotlib."/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://cavernadedados.com/2019/05/estatistica-descritiva-com-python.html"/>
+<meta property="og:url" content="/2019/05/estatistica-descritiva-com-python.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2019-05-23 00:00:00+02:00"/>
 <meta property="article:modified_time" content="2019-05-23 00:00:00+02:00"/>
-<meta property="article:author" content="https://cavernadedados.com/author/hugo">
+<meta property="article:author" content="/author/hugo">
   <meta property="article:publisher" content="https://www.facebook.com/myprofile/" />
 <meta property="article:section" content="Tutoriais"/>
 <meta property="article:tag" content="Python"/>
 <meta property="article:tag" content="Estatística"/>
-<meta property="og:image" itemprop="image" content="https://cavernadedados.com/assets/img/post-2/giphy.webp">
-<meta property="og:image:secure_url" itemprop="image" content="https://cavernadedados.com/assets/img/post-2/giphy.webp">
+<meta property="og:image" itemprop="image" content="/assets/img/post-2/giphy.webp">
+<meta property="og:image:secure_url" itemprop="image" content="/assets/img/post-2/giphy.webp">
 <meta property="og:image:width" content="400" /> 
 <meta property="og:image:height" content="300" />
 
@@ -80,18 +78,18 @@
 {
   "@context": "http://schema.org",
   "@type": "Article",
-  "name": "Estatística Descritiva com Python",
-  "headline": "Estatística Descritiva com Python",
+  "name": "Estatística Descritiva com Python (Parte 1)",
+  "headline": "Estatística Descritiva com Python (Parte 1)",
   "datePublished": "2019-05-23 00:00:00+02:00",
   "dateModified": "2019-05-23 00:00:00+02:00",
   "author": {
     "@type": "Person",
     "name": "hugo",
-    "url": "https://cavernadedados.com/author/hugo"
+    "url": "/author/hugo"
   },
-  "image": "https://cavernadedados.com/assets/img/post-2/giphy.webp",
-  "url": "https://cavernadedados.com/2019/05/estatistica-descritiva-com-python.html",
-  "description": "Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas, Numpy e Matplotlib."
+  "image": "/assets/img/post-2/giphy.webp",
+  "url": "/2019/05/estatistica-descritiva-com-python.html",
+  "description": "Aplicação dos conceitos mais básicos de Estatística Descritiva utilizando a linguagem Python e os pacotes Pandas e Matplotlib."
 }
 </script>
 </head>
@@ -104,7 +102,7 @@
     <p class="nav-label">Menu</p>
     <ul>
 
-              <li role="presentation"><a href="https://cavernadedados.com/pages/sobre/">Sobre o Caverna de Dados</a></li>
+              <li role="presentation"><a href="/pages/sobre/">Sobre o Caverna de Dados</a></li>
 
     </ul>
   </div>
@@ -120,21 +118,21 @@
       <div class="inner">
         <nav id="navigation">
             <span class="blog-logo">
-                <a href="https://cavernadedados.com/"><img src="/assets/img/logo.png" alt="Blog Logo" /></a>
+                <a href="/"><img src="/assets/img/logo.png" alt="Blog Logo" /></a>
             </span>
           <span id="menu-button" class="nav-button">
             <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
           </span>
         </nav>
-        <h1 class="post-title">Estatística Descritiva com Python</h1>
+        <h1 class="post-title">Estatística Descritiva com Python (Parte 1)</h1>
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
-                <a href="https://cavernadedados.com/author/hugo">Hugo Trigueiro</a>
-            | <time datetime="Thu 23 May 2019">Thu 23 May 2019</time>
+                <a href="/author/hugo">Hugo Trigueiro</a>
+            | <time datetime="qui 23 maio 2019">qui 23 maio 2019</time>
         </span>
         <!-- TODO : Modified check -->
-            <span class="post-meta"> | Updated on Thu 23 May 2019</span>
-            <div class="post-cover cover" style="background-image: url('https://cavernadedados.com/assets/img/post-2/giphy.webp')">
+            <span class="post-meta"> | Updated on qui 23 maio 2019</span>
+            <div class="post-cover cover" style="background-image: url('/assets/img/post-2/giphy.webp')">
       </div>
     </header>
 
@@ -149,7 +147,7 @@
                 <p>A Estatística pode ser definida de forma simplificada e resumida, como: uma subárea da Matemática que busca estudar, descrever, interpretar e organizar a informação, através da coleta, descrição e análise de dados.</p>
 <p>Assim, obviamente, a Estatística é considerada um dos pilares fundamentais em Data Science, juntamente com a parte de Tecnologia e Negócios.</p>
 <p>Neste post, vamos ver e aplicar através da linguagem Python alguns dos conceitos mais básicos da Estatística Descritiva, uma das subdivisões da Estatística, responsável principalmente pelo resumo e descrição da informação.</p>
-<p>Para isso, vamos utilizar alguns dos principais pacotes open-source e gratuitos voltados à análise de dados que compõem a <strong>Toolbox de um Data Scientist</strong>. São eles: Pandas, Numpy e Matplotlib.</p>
+<p>Para isso, vamos utilizar alguns dos principais pacotes open-source e gratuitos voltados à análise de dados que compõem a <strong>Toolbox de um Data Scientist</strong>. São eles: Pandas e Matplotlib.</p>
 <p>Também utilizaremos para aplicar os conceitos o Dataset da famosa <a href="https://www.kaggle.com/c/titanic">Competição do Titanic</a> no Kaggle (Titanic: Machine Learning from Disaster).</p>
 <p>Para auxiliar na estrutura do post, vou estar me baseando no excelente livro Estatística Básica, do professor adjunto da Escola de Administração de Empresas da FGV, Wilton Bussab, e do professor titular do Instituto de Matemática e Estatística da Universidade de São Paulo (IME), Pedro Morettin. Todas as demais referências, links e materiais estarão ao final do post.</p>
 <p>Então chega de conversa. Vamos lá!</p>
@@ -160,14 +158,10 @@
 <p>Pandas. Pandas é um poderoso pacote de análise de dados com linguagem Python, ele permite, por exemplo, que trabalhemos facilmente com Dataframes, consigamos informações estatísticas das nossas variáveis e até mesmo plotar gráficos.</p>
 </li>
 <li>
-<p>Numpy. O Numpy é um pacote voltado para computação científica com Python, possui um objeto array N-dimensional que facilita a manipulação de matrizes, sendo fundamental para a Álgebra Linear.</p>
-</li>
-<li>
 <p>Matplotlib. O Matplotlib é uma das principais bibliotecas para plotar gráficos em Python, com ele é possível, por exemplo, plotar gráficos de linha, barra, setor, histogramas e até graficos em 3D.</p>
 </li>
 </ul>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="c1"># O comando abaixo é um comando específico do Jupyter Notebook, ele é utilizado para que o Matplotlib não abra uma nova página para plotar os gráficos e plote no output da célula.</span>
 <span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
@@ -298,20 +292,9 @@
 <li><strong>Distribuição de Frequências</strong></li>
 </ul>
 <p>Bom, quando falamos de Estatística Descritiva, estamos buscando compreender melhor o comportamento das variáveis com que estamos trabalhando. Um dos conceitos mais básicos empregado nesta tarefa é a noção de <strong><em>Distribuição de Frequências,</em></strong> que procura resumir o comportamento de uma variável pela contabilização da frequência dos atributos contidos nela.</p>
-<p>Vamos obter a <em>distribuição de frequências</em> das variáveis Pclass, que se refere a classe socioeconômica da tripulação do Titanic, e Survived, que indica quem sobreviveu ou não ao naufrágio.</p>
-<p>Podemos obter a <em>distribuição de frequências</em> de uma variável tanto com Pandas quanto Numpy. Com Pandas, podemos simplesmente utilizar o método <code>.value_counts()</code></p>
-<div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-
-
-<div class="highlight"><pre><span></span>3    491
-1    216
-2    184
-Name: Pclass, dtype: int64
-</pre></div>
-
-
-<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<p>Vamos obter a <em>distribuição de frequências</em> da variável Sex, que se refere ao sexo da tripulação do Titanic.</p>
+<p>Podemos obter a <em>distribuição de frequências</em> de uma variável com Pandas, podemos simplesmente utilizar o método <code>.value_counts()</code>. Também utilizaremos a função <code>pd.DataFrame()</code> para termos uma melhor visualização dos resultados através de tabelas.</p>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
 </pre></div>
 
 
@@ -333,27 +316,24 @@ Name: Pclass, dtype: int64
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Pclass</th>
+      <th>Sex</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>3</th>
-      <td>491</td>
+      <th>male</th>
+      <td>577</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>216</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>184</td>
+      <th>female</th>
+      <td>314</td>
     </tr>
   </tbody>
 </table>
 </div>
 
-<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+<p>Usando apenas o método <code>.value_counts()</code>sem nenhum parâmetro, conseguimos obter a frequência de cada atributo da variável, ou seja, a <em>distribuição de frequências absoluta</em>. Se quisermos saber qual a <em>distribuição de frequências relativa</em>, isto é, quanto cada atributo representa no total de registros da variável, podemos passar o parâmetro <code>.value_counts(normalize=True)</code></p>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
 </pre></div>
 
 
@@ -375,203 +355,23 @@ Name: Pclass, dtype: int64
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Survived</th>
+      <th>Sex</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>549</td>
+      <th>male</th>
+      <td>0.647587</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>342</td>
+      <th>female</th>
+      <td>0.352413</td>
     </tr>
   </tbody>
 </table>
 </div>
 
-<p>Usando apenas o método <code>.value_counts()</code>sem nenhum parâmetro, conseguimos obter a frequência de cada atributo da variável, ou seja, a <em>distribuição de frequência absoluta</em>. Se quisermos saber qual a <em>distribuição de frequência relativa</em>, isto é, quanto cada atributo representa no total de registros da variável, podemos passar o parâmetro <code>.value_counts(normalize=True)</code></p>
-<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
-</pre></div>
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Pclass</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>3</th>
-      <td>0.551066</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.242424</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.206510</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
-</pre></div>
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Survived</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0.616162</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.383838</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<p>Também podemos obter a <em>distribuição de frequências</em>, absoluta e relativa de uma variável, usando o Numpy.</p>
-<div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-</pre></div>
-
-
-<div class="highlight"><pre><span></span>(array([1, 2, 3], dtype=int64), array([216, 184, 491], dtype=int64))
-</pre></div>
-
-
-<div class="highlight"><pre><span></span><span class="n">values</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Pclass&#39;</span><span class="p">:</span> <span class="n">freq</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
-</pre></div>
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Pclass</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>1</th>
-      <td>216</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>184</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>491</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-</pre></div>
-
-
-<div class="highlight"><pre><span></span>(array([0, 1], dtype=int64), array([549, 342], dtype=int64))
-</pre></div>
-
-
-<div class="highlight"><pre><span></span><span class="n">values</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Survived&#39;</span><span class="p">:</span> <span class="n">freq</span><span class="o">/</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span><span class="p">},</span> <span class="n">index</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
-</pre></div>
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Survived</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0.616162</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.383838</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-<p>Também podemos obter a <em>distribuição de frequências acumulada</em> utilizando o método <code>.cumsum()</code> com Pandas, e a função, de mesmo nome, <code>np.cumsum()</code> com Numpy.</p>
+<p>Uma outra forma de olhar para a distribuição de frequências de uma variável, é através da <em>distribuição de frequências acumulada</em>. A <em>distribuição de frequências acumulada</em> indica quantos elementos ou que percentual deles estão abaixo de determiado valor. Para isso, podemos aplicar o método <code>.cumsum()</code> do Pandas juntamente com o <code>.value_counts()</code>, para que ele retorne uma série cumulativa das frequências.</p>
 <div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">sort</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">cumsum</span><span class="p">())</span>
 </pre></div>
 
@@ -614,8 +414,8 @@ Name: Pclass, dtype: int64
 </table>
 </div>
 
-<div class="highlight"><pre><span></span><span class="n">values</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">],</span> <span class="n">return_counts</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;Pclass&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">freq</span><span class="p">)},</span> <span class="n">index</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
+<p>Para obtermos a <em>distribuição de frequências acumulada relativa</em>, como já fizemos, basta adicionar o parâmetro <code>normalize=True</code>no método <code>.value_counts(normalize=True)</code></p>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Pclass&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">cumsum</span><span class="p">())</span>
 </pre></div>
 
 
@@ -643,22 +443,110 @@ Name: Pclass, dtype: int64
   <tbody>
     <tr>
       <th>1</th>
-      <td>216</td>
+      <td>0.242424</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>400</td>
+      <td>0.448934</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>891</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
 </div>
 
 <ul>
-<li><strong>Histogramas</strong></li>
+<li><strong>Gráficos para Variáveis Qualitativas: Gráficos de Barras e de Setores(Pizza)</strong></li>
+</ul>
+<p>Há muitos tipos de gráficos e muitas formas diferentes de visualizar dados. Contudo, temos alguns que são mais comuns e mais utilizados.</p>
+<p>Quando estamos analisando uma variável qualitativa, os <em>Gráficos de Barras</em> e de <em>Composição de Setores</em> são alguns destes mais conhecidos. Em nosso dataset, temos algumas variáveis qualitativas que podemos visualizar através destes gráficos, como por exemplo a variável Sex(que se refere ao Sexo da tripulação) e a Embarked(que se refere ao portão de embarque).</p>
+<p>Vamos visualizar a distribuição de frequências da variável Sex novamente.</p>
+<div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
+</pre></div>
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>male</th>
+      <td>577</td>
+    </tr>
+    <tr>
+      <th>female</th>
+      <td>314</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Se quisessemos visualizar essa distribuição em um gráfico de barras, podemos utilizar os gráficos do pacote Matplotlib pra fazer isso.</p>
+<p>O Matplotlib possui uma variedade imensa de gráficos que podem ser usados. No caso do gráfico de barras, podemos plotá-lo através da função <code>plt.bar()</code>, onde precisamos passar pelo menos dois parâmetros com os eixos X e Y consecutivamente.</p>
+<p>Vamos criar duas variáveis, uma chamada <strong>sexo</strong> e outra <strong>frequencia</strong>. A variável sexo irá conter o index do dataframe de distribuição de frequências que fizemos acima, o index do dataframe, neste caso, se refere aos próprios valores da variável. Enquanto que os valores do dataframe são as frequências de cada valor e serão armazenados na variável frequencia.</p>
+<p>Assim, podemos adicionar os métodos <code>.index</code> e <code>.values</code> à distribuição de frequência da variável Sex obtida com <code>df['Sex'].value_counts()</code> para recebermos dois arrays com os valores e a quantidade de vezes que eles aparecem na variável,</p>
+<div class="highlight"><pre><span></span><span class="n">sexo</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
+<span class="n">frequencia</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">values</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>(Index([&#39;male&#39;, &#39;female&#39;], dtype=&#39;object&#39;), array([577, 314], dtype=int64))
+</pre></div>
+
+
+<p>Pronto! Agora podemos utilizar a função <code>plt.bar()</code> do Matplotlib e adicionar os parâmetros dos eixos X e Y com as variáveis sexo e frequencia. Vamos utilizar também a função <code>plt.show()</code> para visualizamos a figura do gráfico no modo display.</p>
+<div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">sexo</span><span class="p">,</span> <span class="n">frequencia</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="png" src="/assets/img/post-2/output_19_0.png"></p>
+<p>Ótimo! Nós também podemos customizar os gráficos, e como boa prática, é bom que adicionemos pelo menos um título e o nome dos eixos. Para isso, vamos utilizar as funções <code>plt.title()</code> para o título, <code>plt.xlabel()</code> para o eixo X e <code>plt.ylabel()</code> para o eixo Y. É bem simples, basta passarmos uma string dentro a função para plotarmos um novo gráfico com estas informações.</p>
+<div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribuição de Frequências da Variável Sex&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Sexo&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frequência&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">sexo</span><span class="p">,</span> <span class="n">frequencia</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="png" src="/assets/img/post-2/output_21_0.png"></p>
+<p>Excelente! Conseguimos plotar o nosso primeiro gráfico de barras com a distribuição de frequências de uma variável. Vamos tentar obter agora a <em>distribuição de frequências relativa</em> da variável Sex, porém, visualizada em um gráfico de setores(pizza).</p>
+<p>Podemos fazemos isso utilizando a função <code>plt.pie()</code>. Como já fizemos anteriormente, precisamos passar alguns parâmetros nesta função para plotarmos o gráfico. Aqui vamos precisar de pelo menos três parâmetros para termos as principais informações, a frequência relativa, o label de cada setor e o percentual que os valores representam na variável.</p>
+<p>Estes parâmetros serão <code>x=frequencia</code> com a variável frequencia preenchendo o parâmetro, <code>labels=sexo</code> com a variável sexo preenchendo o parâmetro necessário para plotarmos os valores da variável no label de cada setor e o parâmetro <code>autopct='%2.2f%%'</code>com a string <code>'%2.2f%%'</code>, essa string se refere ao formato em que o valor com o percentual de cada setor tem na variável é apresentado, neste caso, estaremos usando um formato com valores flutuantes do tipo: 'aa.aa%'.</p>
+<p>Não podemos esquecer de colocar o título e nomes dos eixos X e Y, além da função <code>plt.show()</code> para o modo display.</p>
+<div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">frequencia</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">sexo</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%2.2f%%</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribuição de Frequências Relativa da Variável Sex&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Sexo&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Frequência Relativa&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="png" src="/assets/img/post-2/output_23_0.png"></p>
+<ul>
+<li><strong>Gráficos para Variáveis Quantitativas: Histogramas</strong></li>
 </ul>
 <div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()],</span> <span class="n">bins</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
@@ -668,7 +556,7 @@ Name: Pclass, dtype: int64
 </pre></div>
 
 
-<p><img alt="png" src="https://cavernadedados.com/assets/img/post-2/output_22_0.png"></p>
+<p><img alt="png" src="/assets/img/post-2/output_25_0.png"></p>
 <div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]),</span> <span class="nb">max</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Age&#39;</span><span class="p">]))</span>
 </pre></div>
 
@@ -693,6 +581,10 @@ Name: Pclass, dtype: int64
 </li>
 <li>
 <p><strong>Medidas de Dispersão</strong></p>
+<ul>
+<li>Variância</li>
+<li>Desvio Padrão</li>
+</ul>
 </li>
 </ul>
 <div class="highlight"><pre><span></span>
@@ -708,10 +600,6 @@ Name: Pclass, dtype: int64
 <p>https://www.kaggle.com/c/titanic</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span>
-</pre></div>
-
-
 <hr>
 <h1>ROTEIRO - POST ESTATÍSTICA BÁSICA</h1>
 <h2>Introdução</h2>
@@ -756,20 +644,20 @@ Name: Pclass, dtype: int64
 
             <section class="post-info">
                 <div class="post-share">
-                    <a class="twitter" href="https://twitter.com/share?text=Estatística Descritiva com Python&amp;url=https://cavernadedados.com/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a class="twitter" href="https://twitter.com/share?text=Estatística Descritiva com Python (Parte 1)&amp;url=/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
                     </a>
-                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://cavernadedados.com/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
                     </a>
-                    <a class="googleplus" href="https://plus.google.com/share?url=https://cavernadedados.com/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a class="googleplus" href="https://plus.google.com/share?url=/2019/05/estatistica-descritiva-com-python.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
                     </a>
                     <div class="clear"></div>
                 </div>
 
                 <aside class="post-tags">
-<a href="https://cavernadedados.com/tag/python">Python</a><a href="https://cavernadedados.com/tag/estatistica">Estatística</a>                </aside>
+<a href="/tag/python">Python</a><a href="/tag/estatistica">Estatística</a>                </aside>
 
                 <div class="clear"></div>
 
@@ -777,10 +665,10 @@ Name: Pclass, dtype: int64
 
 
                         <figure class="post-author-avatar">
-                            <img src="https://cavernadedados.com/assets/img/hugo.jpg" alt="Hugo Trigueiro" />
+                            <img src="/assets/img/hugo.jpg" alt="Hugo Trigueiro" />
                         </figure>
                     <div class="post-author-bio">
-                        <h4 class="post-author-name"><a href="https://cavernadedados.com/author/hugo">Hugo Trigueiro</a></h4>
+                        <h4 class="post-author-name"><a href="/author/hugo">Hugo Trigueiro</a></h4>
                             <p class="post-author-about">É graduando em Economia na Universidade Federal do ABC e trabalha como Analista de Captação de Recursos em uma instituição do terceiro setor.</p>
                             <span class="post-author-location"><i class="ic ic-location"></i> São Paulo/SP</span>
                         <!-- Social linkes in alphabet order. -->
@@ -815,10 +703,10 @@ Name: Pclass, dtype: int64
     </footer>
   </section>
 
-  <script type="text/javascript" src="https://cavernadedados.com/theme/js/script.js"></script>
+  <script type="text/javascript" src="/theme/js/script.js"></script>
 
     <!-- Script specified by the user -->
-    <script type="text/javascript"  src="https://cavernadedados.com/assets/js/custom.js"></script>
+    <script type="text/javascript"  src="/assets/js/custom.js"></script>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136764041-1"></script>
     <script>
