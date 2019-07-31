@@ -429,7 +429,7 @@ Assim, podemos adicionar os métodos `.index` e `.values` à distribuição de f
 ```python
 sexo = df['Sex'].value_counts().index
 frequencia = df['Sex'].value_counts().values
-x, y
+sexo, frequencia
 ```
 
 

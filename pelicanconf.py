@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 
 
 AUTHOR = 'Caverneiros'
-SITENAME = 'Caverna de Dados'
+SITENAME = 'Caverna de Dados (Este blog ainda está em contrução)'
 SITEURL = 'https://cavernadedados.com'
 # SITEURL = ''
 SITE_LOGO = '/assets/img/logo.png'
