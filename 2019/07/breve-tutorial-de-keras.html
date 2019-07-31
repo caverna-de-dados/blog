@@ -18,6 +18,8 @@
   <meta property="fb:app_id" content="87741124305" />
 
   <!-- Feed -->
+        <link href="https://cavernadedados.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Caverna de Dados (Este blog ainda está em contrução) Full Atom Feed" />
+          <link href="https://cavernadedados.com/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="Caverna de Dados (Este blog ainda está em contrução) Categories Atom Feed" />
 
   <link href="https://cavernadedados.com/theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -43,10 +45,13 @@
 
   <link href="https://cavernadedados.com/2019/07/breve-tutorial-de-keras.html" rel="canonical" />
 
-    <meta name="description" content="Um tutoril de keras">
+    <meta name="description" content="Saiba como implementar uma rede neural usando o framework keras">
 
     <meta name="author" content="diego">
 
+    <meta name="tags" content="keras">
+    <meta name="tags" content="python">
+    <meta name="tags" content="redes neurais">
 
 
 
@@ -54,15 +59,18 @@
 <!-- Open Graph -->
 <meta property="og:site_name" content="Caverna de Dados (Este blog ainda está em contrução)"/>
 <meta property="og:title" content="Breve tutorial de Keras"/>
-<meta property="og:description" content="Um tutoril de keras"/>
+<meta property="og:description" content="Saiba como implementar uma rede neural usando o framework keras"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://cavernadedados.com/2019/07/breve-tutorial-de-keras.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2019-07-29 11:43:00+02:00"/>
-<meta property="article:modified_time" content="2019-07-29 11:43:00+02:00"/>
+<meta property="article:published_time" content="2019-07-31 01:18:00+02:00"/>
+<meta property="article:modified_time" content="2019-07-31 01:18:00+02:00"/>
 <meta property="article:author" content="https://cavernadedados.com/author/diego">
   <meta property="article:publisher" content="https://www.facebook.com/myprofile/" />
-<meta property="article:section" content="misc"/>
+<meta property="article:section" content="Tutoriais"/>
+<meta property="article:tag" content="keras"/>
+<meta property="article:tag" content="python"/>
+<meta property="article:tag" content="redes neurais"/>
 <meta property="og:image" itemprop="image" content="https://cavernadedados.com/assets/img/BG.jpg">
 <meta property="og:image:secure_url" itemprop="image" content="https://cavernadedados.com/assets/img/BG.jpg">
 <meta property="og:image:width" content="400" /> 
@@ -76,8 +84,8 @@
   "@type": "Article",
   "name": "Breve tutorial de Keras",
   "headline": "Breve tutorial de Keras",
-  "datePublished": "2019-07-29 11:43:00+02:00",
-  "dateModified": "2019-07-29 11:43:00+02:00",
+  "datePublished": "2019-07-31 01:18:00+02:00",
+  "dateModified": "2019-07-31 01:18:00+02:00",
   "author": {
     "@type": "Person",
     "name": "diego",
@@ -85,7 +93,7 @@
   },
   "image": "https://cavernadedados.com/assets/img/BG.jpg",
   "url": "https://cavernadedados.com/2019/07/breve-tutorial-de-keras.html",
-  "description": "Um tutoril de keras"
+  "description": "Saiba como implementar uma rede neural usando o framework keras"
 }
 </script>
 </head>
@@ -124,10 +132,10 @@
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="https://cavernadedados.com/author/diego">Diego Zurita</a>
-            | <time datetime="seg 29 julho 2019">seg 29 julho 2019</time>
+            | <time datetime="Wed 31 July 2019">Wed 31 July 2019</time>
         </span>
         <!-- TODO : Modified check -->
-            <span class="post-meta"> | Updated on seg 29 julho 2019</span>
+            <span class="post-meta"> | Updated on Wed 31 July 2019</span>
             <div class="post-cover cover" style="background-image: url('https://cavernadedados.com/assets/img/BG.jpg')">
       </div>
     </header>
@@ -140,7 +148,7 @@
         <article class="post">
         <div class="inner">
             <section class="post-content">
-                <h1>Introdução</h1>
+                <h1>1. Introdução</h1>
 <p>Neste post, vou falar um pouco com implementar/prototipar sua rede neural com o framework Keras, e não falar da parte teórica, isso pode ser assunto para um próximo post. Antes de começar, uma breve introdução.</p>
 <p>Keras é um framework que permite a implementação de uma rede neural, de maneira rápida. Para exemplificar existem algumas maneiras de implementar uma, como por exemplo:</p>
 <ul>
@@ -149,14 +157,12 @@
 </ul>
 <p>A primeira opção é boa para quem esta aprendendo, mas para quem pretende colocar o projeto em produção, não seria uma boa escolha por alguns motivos, por exemplo já existem projetos prontos como tensorflow e keras =). A segunda é uma escolha viável, porém, em algmas situações, queremos fazer alguns testes, rápidos, que não demandem um controle tão "profundo" do que ocorre debaixo do panos.</p>
 <p>Ai entra o Keras, ele é um framework que permite uma prototipação de maneira simples, em uma tradução livre da documentação:"feita para seres humanos, e não maquinas".</p>
-<h1>Instalando e importando</h1>
+<h1>2. Instalando e importando</h1>
 <p>Keras roda em cima de backends, hoje existem implementações para Tensorflow, CNTK ou Theano, neste post, vou usar o Tensorflow.</p>
 <p>A maneira mais fácil instalar via pip.</p>
-<div class="highlight"><pre><span></span>    <span class="n">pip</span> <span class="n">install</span> <span class="n">tensorflow</span> <span class="n">keras</span>
-</pre></div>
+<pre>pip install tensorflow keras</pre>
 
-
-<p>Para importar e ver se funcionou, veja o código abaixo.</p>
+<p>Para importar e ver se funcionou, veja o código abaixo</p>
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span>
 <span class="kn">import</span> <span class="nn">keras</span>
 </pre></div>
@@ -164,7 +170,7 @@
 
 <p>Ele exibe uma mensagem falando que estamos utilizando o backend Tensorflow.</p>
 <p>Obs: Se quiser saber mais sobre Tensorflow, mande um email, posso escrever um outro post, ou veja a própria documentação, é um ótimo ponto de partida.</p>
-<h1>Dados</h1>
+<h1>3. Dados</h1>
 <p>Para fins didádicos, vou usar o famoso dataset MNIST, análogo ao Hello World para quem aprende alguma linguagem de programação nova.</p>
 <p>Para quem não conhece, o dataset é formado para imagems de 28x28 pixels, contendo digitos escritos a mão por pessoas e seus respectivos labels, digitos de 0 ao 9.</p>
 <p>Então vamos carregar o dataset</p>
@@ -177,7 +183,7 @@
 <p>Ao executar o código acima, ele irá fazer o download dos dados,
 e devolve os dados como duas tuples do python, a primeira contém
 os dados para treinamento, e a segunda os dados para teste.</p>
-<h2>Sucinta exploração dos dados</h2>
+<h2>3.1. Sucinta exploração dos dados</h2>
 <div class="highlight"><pre><span></span><span class="n">x_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">x_test</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_test</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
@@ -204,13 +210,163 @@ os dados para treinamento, e a segunda os dados para teste.</p>
 
 <p><img alt="png" src="/assets/output_14_0.png"></p>
 <p>Dai vemos algumas imagens e suas classificações.</p>
-<h2>Implementação</h2>
+<h1>4. Implementação</h1>
 <p>Até aqui nada de Keras, somente carregamento e alguma visualização dos dados (onde normalmente se gasta mais tempo em qualquer projeto que envolva machine learning), mas agora que temos os dados prontos podemos pensar em uma rede neural básica para implementar.</p>
 <p>Vou utilizar uma versão simplificada da exibida nos videos de 
 <a href="https://www.youtube.com/watch?v=aircAruvnKk&amp;list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&amp;index=1">Redes neurais do 3Blue1Brow</a> (que são ótimos por sinal)</p>
-<p>O Keras, trabalhar em cima de modelos (models). Modelos são especificações de como sua rede neural sera construída, por exemplo quais camadas vão estar conectadas com quais, os nós, serão totalmente conexos ou não, e por ai vai. Seria como se fosse a "planta" de uma rede neural.</p>
-<p>A mais comum, é a Sequencial (Sequential), onde a informação de uma camada é passada para seguinte sequencial, ou seja a camada n para informação a camada n+1. É aquela imagem clássica quando se trata de redes neurais. Veja a imagem abaixo: </p>
-<p><img src="https://miro.medium.com/max/1400/1*ZB6H4HuF58VcMOWbdpcRxQ.png"></p>
+<p>O Keras, trabalhar em cima de modelos (models). Modelos são maneiras de especificar regras gerais que seu modelo irá seguir. E também possui alguns metodos uteis na hora de debugar sua rede, veja <a href="https://keras.io/models/about-keras-models/">modelos keras</a></p>
+<p>A mais comum, é a Sequencial (Sequential), onde a informação no momento do treinamento/uso é passada para frente (feedforward), e na hora da otimização é passando de traz para frente (backpropagation), ambas de maneira sequencia (ver imagem abaixo):</p>
+<p><img src="https://www.researchgate.net/profile/Montalee_Sasananan/publication/281271367/figure/fig2/AS:284441772609536@1444827611106/Feed-Forward-Neural-Network-with-Back-Propagation.png"></p>
+<p>Ao criarmos um modelo, adicionamos as camadas (layers). O keras vem com algumas (muitas) já implementadas, então temos camadas recorrente (recurrent layers), camadas de convolução (convolution layers), camadas densas (dense layers), entre outras, encontre mais na <a href="https://keras.io/layers/core/">seção de camadas da documentação</a>.</p>
+<h2>4.1. Arquitetura da rede</h2>
+<p>A rede aqui implementada, terá uma camada de input com 28x28=784 neurônios (número de pixels), uma camada de 256 com um Dropout de 0.2, e a camada de saída, contendo 10 neurônios (número de classes do dataset).</p>
+<p>Lembrando, que a quantidade de neurônios usadas é um hiperparametro, o que significa que não existe um número certo ou errado, existe aquele que se adequa ao seu problema, em geral encontra o ideal por meio de experimentos e de experiências passadas.</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Flatten</span><span class="p">,</span> <span class="n">Dropout</span>
+
+<span class="n">modelo</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="n">modelo</span><span class="o">.</span><span class="n">add</span><span class="p">(</span> <span class="n">Flatten</span><span class="p">(</span><span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">))</span> <span class="p">)</span>
+<span class="n">modelo</span><span class="o">.</span><span class="n">add</span><span class="p">(</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">modelo</span><span class="o">.</span><span class="n">add</span><span class="p">(</span> <span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">modelo</span><span class="o">.</span><span class="n">add</span><span class="p">(</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;softmax&quot;</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+
+<p>Então, acima temos a criaçao do esqueleto do modelo. Adicionamos, a camada de input, que é do tipo Flatten, o que significa que a entrada é uma matriz de 28x28 e o seu output é um vetor de dimensão 728. Que está totalmenta conectada (fully connected) coma a próxima camada, que por sinal são densas (Dense), ou seja, os 728 neurônios estão conectados com os 256, que por sua vez estão conetados com os 10 de saída.</p>
+<p>Ah, vemos o paramêtro activation. Ele é a função de ativação do neurônio, em poucas palavras, seu papel é pegar um número real, e mapea-lo no intervalo [0, 1] com certas propriedas, para mais informações <a href="https://en.wikipedia.org/wiki/Activation_function">funções de ativação</a>.</p>
+<h2>4.2. Compilação</h2>
+<p>Agora que temos o esquelo pronto, podemos compilar o modelo. Nesse momento, passamos as funções de otimização, a função de perda, quais metricas queremos obter durante o trinamento, entre outros, veja <a href="https://keras.io/models/model/#methods">seção de compilação da documentação</a></p>
+<div class="highlight"><pre><span></span><span class="n">modelo</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+    <span class="n">optimizer</span><span class="o">=</span><span class="s2">&quot;adam&quot;</span><span class="p">,</span>
+    <span class="n">loss</span><span class="o">=</span><span class="s2">&quot;sparse_categorical_crossentropy&quot;</span><span class="p">,</span>
+    <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;accuracy&quot;</span><span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<p>Acima compilamos, e adicionamos a <a href="https://towardsdatascience.com/adam-latest-trends-in-deep-learning-optimization-6be9a291375c">função adam</a> de otimizador, e a <a href="https://towardsdatascience.com/understanding-different-loss-functions-for-neural-networks-dd1ed0274718">função de entropia categorica cruzada esparsa</a> (tradução livre) e por fim, queremos que nosso modelo retorne as métrica de <a href="https://en.wikipedia.org/wiki/Accuracy_and_precision">acurácia</a> durante o tempo.</p>
+<p>Muito disso, é bem teórico, e esta fora do escopo desse post, mas como mencioado, posso escrever outro post, explicando cada uma dessas coisas, mande email para cavernadedados@gmail.com</p>
+<h2>4.3. Treino</h2>
+<p>Por fim, temos o modelo, compilamos e agora podemos treina-lo. Isso tambem é bem prático com Keras, com algumas poucas linhas, já podemos ver alguns resultados.</p>
+<div class="highlight"><pre><span></span><span class="n">x_treino_preprocessado</span> <span class="o">=</span> <span class="n">x_train</span> <span class="o">/</span> <span class="mf">255.0</span>
+<span class="n">epochs</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="n">historico</span> <span class="o">=</span> <span class="n">modelo</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span>
+    <span class="n">x_treino_preprocessado</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
+    <span class="n">epochs</span> <span class="o">=</span> <span class="n">epochs</span><span class="p">,</span>
+    <span class="n">validation_split</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>Train on 48000 samples, validate on 12000 samples
+Epoch 1/5
+48000/48000 [==============================] - 9s 197us/step - loss: 0.2775 - acc: 0.9200 - val_loss: 0.1433 - val_acc: 0.9573
+Epoch 2/5
+48000/48000 [==============================] - 9s 181us/step - loss: 0.1252 - acc: 0.9625 - val_loss: 0.1006 - val_acc: 0.9698
+Epoch 3/5
+48000/48000 [==============================] - 9s 197us/step - loss: 0.0897 - acc: 0.9733 - val_loss: 0.0811 - val_acc: 0.9752
+Epoch 4/5
+48000/48000 [==============================] - 8s 168us/step - loss: 0.0679 - acc: 0.9793 - val_loss: 0.0862 - val_acc: 0.9741
+Epoch 5/5
+48000/48000 [==============================] - 9s 180us/step - loss: 0.0566 - acc: 0.9817 - val_loss: 0.0781 - val_acc: 0.9766
+</pre></div>
+
+
+<p>Aqui conseguimos uma acurácia acima dos 90%, o que provavelmente não esta nada mal, mas temos de nos certificar se a rede não overfitada, ou se ocorreu algo extranho, mas essa verificação deixo a cargo do leitor. </p>
+<p>Mas por agora, temos a variável historico, que recebe alguns dados sobre o processo de treinameto da rede, vamos dar uma analisada nele:</p>
+<div class="highlight"><pre><span></span><span class="n">historico</span><span class="o">.</span><span class="n">history</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>{&#39;val_loss&#39;: [0.1432636775796612,
+  0.10058167517433564,
+  0.08107063452154398,
+  0.08620727663642416,
+  0.0781276940839986],
+ &#39;val_acc&#39;: [0.95725,
+  0.9698333333333333,
+  0.9751666666666666,
+  0.9740833333333333,
+  0.9765833333333334],
+ &#39;loss&#39;: [0.27745917640998957,
+  0.1252085804048305,
+  0.08968349125096574,
+  0.06792198085420144,
+  0.05663824951361554],
+ &#39;acc&#39;: [0.9200416666666666,
+  0.9625416666666666,
+  0.9732708333333333,
+  0.9793333333333333,
+  0.98175]}
+</pre></div>
+
+
+<p>Então vamos, que temos, a acc e val_acc, que é a acurácia no dataset de treino e o de validação (provineintes do split), respectivamente, durante as épocas. Podemos plotar e ver como se comporta:</p>
+<div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Acurácia&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">epochs</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">historico</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;acc&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;acuráca&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">epochs</span><span class="o">+</span><span class="mi">1</span> <span class="p">),</span> <span class="n">historico</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;val_acc&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;acuráca em validação&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Época&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Porcentagem&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="png" src="/assets/output_32_0.png"></p>
+<p>Podemos fazer o mesmo para a perda, da seguinte maneira:</p>
+<div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Loss&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">epochs</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="n">historico</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;loss&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Perda&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">epochs</span><span class="o">+</span><span class="mi">1</span> <span class="p">),</span> <span class="n">historico</span><span class="o">.</span><span class="n">history</span><span class="p">[</span><span class="s2">&quot;val_loss&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Perda em validação&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Época&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Porcentagem&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+
+<p><img alt="png" src="/assets/output_34_0.png"></p>
+<h2>4.4. Avaliação e uso</h2>
+<p>Enfim, temos a rede treinada, agora nos falta avaliar em dados nunca vistos e ver como fazemos predições.</p>
+<p>Para avaliar a rede, podemos usar o próprio método do keras, veja:</p>
+<div class="highlight"><pre><span></span><span class="p">(</span><span class="n">perda_teste</span><span class="p">,</span> <span class="n">acuracia_teste</span><span class="p">)</span> <span class="o">=</span> <span class="n">modelo</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_test</span> <span class="o">/</span> <span class="mf">255.0</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Perda do teste:&quot;</span><span class="p">,</span> <span class="n">perda_teste</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Acurácia do teste:&quot;</span><span class="p">,</span> <span class="n">acuracia_teste</span><span class="p">)</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span>10000/10000 [==============================] - 0s 44us/step
+Perda do teste: 0.06675113605752121
+Acurácia do teste: 0.9788
+</pre></div>
+
+
+<p>E para fazer uma predição, usamos o metodo predict (muito similar a API do scikitlearn):</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="n">index</span> <span class="o">=</span> <span class="mi">3000</span>
+<span class="n">predicoes</span> <span class="o">=</span> <span class="n">modelo</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x_test</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">/</span> <span class="mf">255.0</span><span class="p">])</span> <span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Predição:&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">predicoes</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Real:&quot;</span><span class="p">,</span> <span class="n">y_test</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+</pre></div>
+
+
+<div class="highlight"><pre><span></span><span class="n">Predição</span><span class="o">:</span> <span class="mi">6</span>
+<span class="n">Real</span><span class="o">:</span> <span class="mi">6</span>
+</pre></div>
+
+
+<h1>Conclusão</h1>
+<p>Criamos um modelos que reconhece digitos de uma imagem, que uma acurácia acima de 90% com poucas linhas de código, esse é o principal ganho quando se usa Keras, ele permiter uma prototipação rápida, pois como mencionado na sua <a href="https://keras.io/">home</a>, "Being able to go from idea to result with the least possible delay is key to doing good research." (ser capaz de partir de uma ideia até um resultado no menor tempo possível é a chave para uma pesquisa [tradução livre])</p>
+<p>Então da próxima vez que precisar implementar uma rede neural, talvez vc possa colocar o Keras na sua caixa de ferramentas possiveis para resolver seu problema.</p>
+<h1>Referências</h1>
+<ul>
+<li>https://keras.io/</li>
+<li>http://neuralnetworksanddeeplearning.com/chap1.html</li>
+<li>https://www.alura.com.br/curso-online-deep-learning-introducao-com-keras</li>
+<li>https://www.3blue1brown.com/neural-networks</li>
+</ul>
             </section>
 
             <section class="post-info">
@@ -227,6 +383,8 @@ os dados para treinamento, e a segunda os dados para teste.</p>
                     <div class="clear"></div>
                 </div>
 
+                <aside class="post-tags">
+<a href="https://cavernadedados.com/tag/keras">keras</a><a href="https://cavernadedados.com/tag/python">python</a><a href="https://cavernadedados.com/tag/redes-neurais">redes neurais</a>                </aside>
 
                 <div class="clear"></div>
 
