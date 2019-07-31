@@ -160,15 +160,19 @@
 <h1>2. Instalando e importando</h1>
 <p>Keras roda em cima de backends, hoje existem implementações para Tensorflow, CNTK ou Theano, neste post, vou usar o Tensorflow.</p>
 <p>A maneira mais fácil instalar via pip.</p>
-<pre>pip install tensorflow keras</pre>
-
-<p>Para importar e ver se funcionou, veja o código abaixo</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span>
-<span class="kn">import</span> <span class="nn">keras</span>
+<div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">tensorflow</span> <span class="n">keras</span>
 </pre></div>
 
 
-<p>Ele exibe uma mensagem falando que estamos utilizando o backend Tensorflow.</p>
+<p>Para importar e ver se funcionou, veja o código abaixo</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">keras</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Ele exibe uma mensagem falando que estamos utilizando o backend Tensorflow, junto com a versão instalada.</p>
 <p>Obs: Se quiser saber mais sobre Tensorflow, mande um email, posso escrever um outro post, ou veja a própria documentação, é um ótimo ponto de partida.</p>
 <h1>3. Dados</h1>
 <p>Para fins didádicos, vou usar o famoso dataset MNIST, análogo ao Hello World para quem aprende alguma linguagem de programação nova.</p>
@@ -183,7 +187,8 @@
 <p>Ao executar o código acima, ele irá fazer o download dos dados,
 e devolve os dados como duas tuples do python, a primeira contém
 os dados para treinamento, e a segunda os dados para teste.</p>
-<h2>3.1. Sucinta exploração dos dados</h2>
+<h2>3.1. Exploração dos dados</h2>
+<p>Para começar, vamos ver as dimensões do dataset que estamos utlizando:</p>
 <div class="highlight"><pre><span></span><span class="n">x_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">x_test</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_test</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
@@ -362,10 +367,10 @@ Acurácia do teste: 0.9788
 <p>Então da próxima vez que precisar implementar uma rede neural, talvez vc possa colocar o Keras na sua caixa de ferramentas possiveis para resolver seu problema.</p>
 <h1>Referências</h1>
 <ul>
-<li>https://keras.io/</li>
-<li>http://neuralnetworksanddeeplearning.com/chap1.html</li>
-<li>https://www.alura.com.br/curso-online-deep-learning-introducao-com-keras</li>
-<li>https://www.3blue1brown.com/neural-networks</li>
+<li><a href="https://keras.io/">https://keras.io/</a></li>
+<li><a href="http://neuralnetworksanddeeplearning.com/chap1.html">http://neuralnetworksanddeeplearning.com/chap1.html</a></li>
+<li><a href="https://www.alura.com.br/curso-online-deep-learning-introducao-com-keras">https://www.alura.com.br/curso-online-deep-learning-introducao-com-keras</a></li>
+<li><a href="https://www.3blue1brown.com/neural-networks">https://www.3blue1brown.com/neural-networks</a></li>
 </ul>
             </section>
 
