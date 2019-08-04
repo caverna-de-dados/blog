@@ -130,10 +130,10 @@
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="https://cavernadedados.com/author/diego">Diego Zurita</a>
-            | <time datetime="Wed 31 July 2019">Wed 31 July 2019</time>
+            | <time datetime="qua 31 julho 2019">qua 31 julho 2019</time>
         </span>
         <!-- TODO : Modified check -->
-            <span class="post-meta"> | Updated on Wed 31 July 2019</span>
+            <span class="post-meta"> | Updated on qua 31 julho 2019</span>
             <div class="post-cover cover" style="background-image: url('https://cavernadedados.com/assets/img/BG.jpg')">
       </div>
     </header>
@@ -191,7 +191,7 @@ os dados para treinamento, e a segunda os dados para teste.</p>
 </pre></div>
 
 
-<div class="highlight"><pre><span></span><span class="p">((</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span> <span class="p">(</span><span class="mi">60000</span><span class="p">,),</span> <span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">),</span> <span class="p">(</span><span class="mi">10000</span><span class="p">,))</span>
+<div class="highlight"><pre><span></span>((60000, 28, 28), (60000,), (10000, 28, 28), (10000,))
 </pre></div>
 
 
@@ -262,17 +262,17 @@ os dados para treinamento, e a segunda os dados para teste.</p>
 </pre></div>
 
 
-<div class="highlight"><pre><span></span><span class="n">Train</span> <span class="k">on</span> <span class="mi">48000</span> <span class="n">samples</span><span class="p">,</span> <span class="n">validate</span> <span class="k">on</span> <span class="mi">12000</span> <span class="n">samples</span>
-<span class="n">Epoch</span> <span class="mi">1</span><span class="o">/</span><span class="mi">5</span>
-<span class="mi">48000</span><span class="o">/</span><span class="mi">48000</span> <span class="p">[</span><span class="o">==============================</span><span class="p">]</span> <span class="o">-</span> <span class="mi">9</span><span class="n">s</span> <span class="mi">197</span><span class="n">us</span><span class="o">/</span><span class="n">step</span> <span class="o">-</span> <span class="n">loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">2775</span> <span class="o">-</span> <span class="n">acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9200</span> <span class="o">-</span> <span class="n">val_loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">1433</span> <span class="o">-</span> <span class="n">val_acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9573</span>
-<span class="n">Epoch</span> <span class="mi">2</span><span class="o">/</span><span class="mi">5</span>
-<span class="mi">48000</span><span class="o">/</span><span class="mi">48000</span> <span class="p">[</span><span class="o">==============================</span><span class="p">]</span> <span class="o">-</span> <span class="mi">9</span><span class="n">s</span> <span class="mi">181</span><span class="n">us</span><span class="o">/</span><span class="n">step</span> <span class="o">-</span> <span class="n">loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">1252</span> <span class="o">-</span> <span class="n">acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9625</span> <span class="o">-</span> <span class="n">val_loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">1006</span> <span class="o">-</span> <span class="n">val_acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9698</span>
-<span class="n">Epoch</span> <span class="mi">3</span><span class="o">/</span><span class="mi">5</span>
-<span class="mi">48000</span><span class="o">/</span><span class="mi">48000</span> <span class="p">[</span><span class="o">==============================</span><span class="p">]</span> <span class="o">-</span> <span class="mi">9</span><span class="n">s</span> <span class="mi">197</span><span class="n">us</span><span class="o">/</span><span class="n">step</span> <span class="o">-</span> <span class="n">loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0897</span> <span class="o">-</span> <span class="n">acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9733</span> <span class="o">-</span> <span class="n">val_loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0811</span> <span class="o">-</span> <span class="n">val_acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9752</span>
-<span class="n">Epoch</span> <span class="mi">4</span><span class="o">/</span><span class="mi">5</span>
-<span class="mi">48000</span><span class="o">/</span><span class="mi">48000</span> <span class="p">[</span><span class="o">==============================</span><span class="p">]</span> <span class="o">-</span> <span class="mi">8</span><span class="n">s</span> <span class="mi">168</span><span class="n">us</span><span class="o">/</span><span class="n">step</span> <span class="o">-</span> <span class="n">loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0679</span> <span class="o">-</span> <span class="n">acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9793</span> <span class="o">-</span> <span class="n">val_loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0862</span> <span class="o">-</span> <span class="n">val_acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9741</span>
-<span class="n">Epoch</span> <span class="mi">5</span><span class="o">/</span><span class="mi">5</span>
-<span class="mi">48000</span><span class="o">/</span><span class="mi">48000</span> <span class="p">[</span><span class="o">==============================</span><span class="p">]</span> <span class="o">-</span> <span class="mi">9</span><span class="n">s</span> <span class="mi">180</span><span class="n">us</span><span class="o">/</span><span class="n">step</span> <span class="o">-</span> <span class="n">loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0566</span> <span class="o">-</span> <span class="n">acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9817</span> <span class="o">-</span> <span class="n">val_loss</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">0781</span> <span class="o">-</span> <span class="n">val_acc</span><span class="p">:</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9766</span>
+<div class="highlight"><pre><span></span>Train on 48000 samples, validate on 12000 samples
+Epoch 1/5
+48000/48000 [==============================] - 9s 197us/step - loss: 0.2775 - acc: 0.9200 - val_loss: 0.1433 - val_acc: 0.9573
+Epoch 2/5
+48000/48000 [==============================] - 9s 181us/step - loss: 0.1252 - acc: 0.9625 - val_loss: 0.1006 - val_acc: 0.9698
+Epoch 3/5
+48000/48000 [==============================] - 9s 197us/step - loss: 0.0897 - acc: 0.9733 - val_loss: 0.0811 - val_acc: 0.9752
+Epoch 4/5
+48000/48000 [==============================] - 8s 168us/step - loss: 0.0679 - acc: 0.9793 - val_loss: 0.0862 - val_acc: 0.9741
+Epoch 5/5
+48000/48000 [==============================] - 9s 180us/step - loss: 0.0566 - acc: 0.9817 - val_loss: 0.0781 - val_acc: 0.9766
 </pre></div>
 
 
@@ -282,26 +282,26 @@ os dados para treinamento, e a segunda os dados para teste.</p>
 </pre></div>
 
 
-<div class="highlight"><pre><span></span><span class="err">{</span><span class="s1">&#39;val_loss&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">1432636775796612</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">10058167517433564</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">08107063452154398</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">08620727663642416</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">0781276940839986</span><span class="p">],</span>
- <span class="s1">&#39;val_acc&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">95725</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">9698333333333333</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">9751666666666666</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">9740833333333333</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">9765833333333334</span><span class="p">],</span>
- <span class="s1">&#39;loss&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">27745917640998957</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">1252085804048305</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">08968349125096574</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">06792198085420144</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">05663824951361554</span><span class="p">],</span>
- <span class="s1">&#39;acc&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">.</span><span class="mi">9200416666666666</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">9625416666666666</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">9732708333333333</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">9793333333333333</span><span class="p">,</span>
-  <span class="mi">0</span><span class="p">.</span><span class="mi">98175</span><span class="p">]</span><span class="err">}</span>
+<div class="highlight"><pre><span></span>{&#39;val_loss&#39;: [0.1432636775796612,
+  0.10058167517433564,
+  0.08107063452154398,
+  0.08620727663642416,
+  0.0781276940839986],
+ &#39;val_acc&#39;: [0.95725,
+  0.9698333333333333,
+  0.9751666666666666,
+  0.9740833333333333,
+  0.9765833333333334],
+ &#39;loss&#39;: [0.27745917640998957,
+  0.1252085804048305,
+  0.08968349125096574,
+  0.06792198085420144,
+  0.05663824951361554],
+ &#39;acc&#39;: [0.9200416666666666,
+  0.9625416666666666,
+  0.9732708333333333,
+  0.9793333333333333,
+  0.98175]}
 </pre></div>
 
 
@@ -339,9 +339,9 @@ os dados para treinamento, e a segunda os dados para teste.</p>
 </pre></div>
 
 
-<div class="highlight"><pre><span></span><span class="mi">10000</span><span class="o">/</span><span class="mi">10000</span> [<span class="o">==============================</span>] <span class="o">-</span> <span class="mi">0</span><span class="nv">s</span> <span class="mi">44</span><span class="nv">us</span><span class="o">/</span><span class="nv">step</span>
-<span class="nv">Perda</span> <span class="k">do</span> <span class="nv">teste</span>: <span class="mi">0</span>.<span class="mi">06675113605752121</span>
-<span class="nv">Acur</span>á<span class="nv">cia</span> <span class="k">do</span> <span class="nv">teste</span>: <span class="mi">0</span>.<span class="mi">9788</span>
+<div class="highlight"><pre><span></span>10000/10000 [==============================] - 0s 44us/step
+Perda do teste: 0.06675113605752121
+Acurácia do teste: 0.9788
 </pre></div>
 
 
@@ -355,8 +355,8 @@ os dados para treinamento, e a segunda os dados para teste.</p>
 </pre></div>
 
 
-<div class="highlight"><pre><span></span><span class="n">Predi</span><span class="err">çã</span><span class="n">o</span><span class="p">:</span> <span class="mi">6</span>
-<span class="nb">Real</span><span class="p">:</span> <span class="mi">6</span>
+<div class="highlight"><pre><span></span><span class="n">Predição</span><span class="o">:</span> <span class="mi">6</span>
+<span class="n">Real</span><span class="o">:</span> <span class="mi">6</span>
 </pre></div>
 
 
