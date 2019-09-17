@@ -11,129 +11,61 @@
   font-style: normal;
 }
 
-/*INPUTS AND OUTPUTS*/
-pre {
-    margin: 0px auto 35px;
-    border: none;
-    padding: 8px 10px;
-    color: #343642;
-    background-color: #fff;
-	white-space: pre-wrap;
+
+p {
+  margin: 25px auto;
 }
-.pre-style {
-	border: 1px solid #DEDEDE;
-	margin: 10px auto 3px;
-	background-color: rgb(255, 251, 251);
-	background-color: #191919;
-	color: #fff;
-	padding: 10px 10px;
-	white-space: pre;
-	border-radius: 6px;
-}
-.dataframe thead tr {
-    background-color: #fff1f1;
-}
-.dataframe tbody tr:hover {
-    background-color: #fff1f1;
-}
-.dataframe thead tr th {
-    border: 1px solid #b5b4b4;
-    font-family: 'Georgia', sans-serif;
-    font-weight: 600;
-}
-.dataframe tbody {
-	background-color: #fff;
-}
-table th, table td {
-	font-size: 0.75em;
-	border: 1px solid #cecece;
-}
-.dataframe {
-	max-width: 800px;
-    margin: 0px 0px 1px 0px;
-    border: 0px solid #e5e4e1;
-    width: 99.9%;
-}
-.highlight .s1 {
- 	color: #ff245c;
-}
-.highlight .bp, .highlight .kn {
-    color: #4fb11f;
-}
-.highlight .nn {
-    color: #fff;
-}
-.highlight .n {
-     color: #fff;
-}
-.highlight .o {
-	color: #268cf9;
-}
-.post-content img {
-	width: 90%;
-	display: block;
-    margin: 0 auto;
+
+.prompt {
+	display: none !important;
 }
 
 
-/*GENERAL*/
-body {
-	font-family: 'Georgia', sans-serif;
-}
-.content .post .inner {
-	overflow-x: auto !important;
-}
-
-.content .post .inner section div {
-	overflow-x: auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'NexaRustSans-Black';
-	font-size: 35px;
-}
-
-.main-logo {
-    margin: 0 auto;
-    width: 60%;
-}
-
-#blog-header.has-cover  {
-    padding: 80px 0;
-}
-
-/*MOBILE*/
-@media (max-width: 667px) {
-	.main-logo {
-    	width: 70%;
-	}
-	#blog-header.has-cover  {
-	    padding: 140px 0;
-	}
-	h1, h2, h3, h4, h5, h6 {
-		font-size: 30px;
-	}
-	.post-title {
-		font-size: 30px;
-	}
-	#blog-author .post-author-name {
-		font-size: 20px;
-		margin-bottom: 25px;
-	}
-}
-
-.blog-logo a img {
-	opacity: 0.4;
-}
-
-div .highlight {
+div.input_area {
 	font-size: 16px;
+	background-color: #191919 !important;
+	border-radius: 5px !important;
 }
 
-ul {
-    list-style: initial;
+div.input_area > div.highlight {
+	margin: 0px !important;
 }
 
-ul>li:before {
-	content: none;
+div.input_area > div.highlight > pre {
+	padding: 15px !important;
+}
+
+div.output_subarea {
+  max-width: none !important;
+  padding: 10px 5px !important;
+}
+
+.rendered_html pre, .rendered_html tr, .rendered_html th, .rendered_html tbody tr:nth-child(odd) {
+  background: #ffffff !important;
+  font-size: 16px !important;
+}
+
+table {
+  margin: -5px 0 !important;
+}
+
+div.output_text {
+  font-size: 16px !important;
+}
+
+.post-content img, .post-content .fluid-width-video-wrapper {
+  width: 100% !important;
+  margin-left: 0px !important;
+}
+
+.rendered_html :link {
+    text-decoration: none !important;
+}
+
+.dataframe thead th {
+    background-color: #fff4f4 !important;
+}
+
+.rendered_html tbody tr:hover {
+    background: rgba(208, 208, 208, 0.12) !important;
 }
