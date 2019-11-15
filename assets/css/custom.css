@@ -11,10 +11,15 @@
   font-style: normal;
 }
 
+/*CONFIGURAÇÕES GERAIS*/
+.inner {
+    max-width: 34em;
+}
 
 p {
   margin: 25px auto;
 }
+
 
 .prompt {
 	display: none !important;
@@ -39,6 +44,11 @@ div.output_subarea {
   max-width: none !important;
   padding: 10px 5px !important;
 }
+
+div.output_area pre {
+  padding: 1px 0 10px 0 !important;
+}
+
 
 .rendered_html pre, .rendered_html tr, .rendered_html th, .rendered_html tbody tr:nth-child(odd) {
   background: #ffffff !important;
@@ -68,4 +78,16 @@ div.output_text {
 
 .rendered_html tbody tr:hover {
     background: rgba(208, 208, 208, 0.12) !important;
+}
+
+
+
+/*CONFIGURAÇÕES DA HOME*/
+#blog-header.has-cover {
+    padding: 80px 0;
+}
+
+.main-logo {
+    margin: 0 auto;
+    max-width: 60%;
 }
