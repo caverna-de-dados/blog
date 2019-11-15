@@ -6,8 +6,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Caverneiros'
 SITENAME = 'Caverna de Dados (Este site ainda está em contrução)'
-SITEURL = 'https://cavernadedados.com'
-# SITEURL = ''
+# SITEURL = 'https://cavernadedados.com'
+SITEURL = ''
 SITE_LOGO = '/assets/img/logo.png'
 
 PATH = 'content/'
@@ -82,15 +82,19 @@ AUTHORS_SAVE_AS = 'authors.html'
 
 ### Plugins
 
+MARKUP = ('md', 'ipynb')
+
 PLUGIN_PATHS = [
-  'plugins'
+  './plugins'
 ]
 
-# PLUGINS = [
-#   'sitemap',
-#   'neighbors',
-#   'assets'
-# ]
+PLUGINS = [ 'ipynb.markup'
+  # 'sitemap',
+  # 'neighbors',
+  # 'assets'
+]
+
+IGNORE_FILES = [".ipynb_checkpoints"] 
 
 # Sitemap
 SITEMAP = {
@@ -171,4 +175,4 @@ HEADER_COVER_OG = 'assets/img/LOGO_OG.jpg'
 COLOR_SCHEME_CSS = 'monokai.css'
 
 CSS_OVERRIDE = ['assets/css/custom.css']
-JS_OVERRIDE = ['assets/js/custom.js']
+# JS_OVERRIDE = ['assets/js/custom.js']
