@@ -19,8 +19,31 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'NexaRustSans-Black';
-    font-size: 35px;
     margin: 2.286em 0 10px 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 22px;
+}
+
+h6 {
+    font-size: 20px;
 }
 
 .main-logo {
@@ -32,6 +55,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 80px 0;
 }
 
+a.anchor-link {
+    display: none !important;
+}
 /*MOBILE*/
 @media (max-width: 667px) {
     .main-logo {
@@ -40,8 +66,23 @@ h1, h2, h3, h4, h5, h6 {
     #blog-header.has-cover  {
         padding: 140px 0;
     }
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 30px;
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 18px;
     }
     .post-title {
         font-size: 30px;
@@ -110,7 +151,7 @@ div.output_area pre {
 
 
 .rendered_html pre, .rendered_html tr, .rendered_html th, .rendered_html tbody tr:nth-child(odd) {
-  background: #ffffff !important;
+  background: #343642 !important;
   font-size: 16px !important;
 }
 

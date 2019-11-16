@@ -137,11 +137,12 @@ AUTHORS_BIO = {
     "name": "Hugo Trigueiro",
     "cover": "assets/img/bg-hugo.jpg",
     "image": "assets/img/hugo.jpg",
-    # "website": "http://blog.arulraj.net",
+    # "twitter": "https://twitter.com/hugo_trigueiro",
+    "twitter": "hugo_trigueiro",
     "linkedin": "hugo-trigueiro",
     "github": "hugotrigueiro",
     "location": "São Paulo/SP",
-    "bio": "É graduando em Economia na Universidade Federal do ABC e trabalha como Analista de Captação de Recursos em uma instituição do terceiro setor."
+    "bio": "Graduando em Economia pela Universidade Federal do ABC, pesquisador no tema de Desenvolvimento Econômico e trabalha na área de Operational Risk do Itaú Unibanco. Gosta de um cafézinho quente e nas horas vagas arranha no violão."
   }, 
   "diego": {
     "name": "Diego Zurita",

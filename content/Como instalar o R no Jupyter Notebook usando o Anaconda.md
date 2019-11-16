@@ -1,6 +1,5 @@
 Title: Como instalar o R no Jupyter Notebook usando o Anaconda
 Date: 2019-05-07 01:00
-Modified: 2019-05-07 01:00
 Category: Tutoriais
 Tags: R, Jupyter Notebook, Anaconda
 Slug: como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda
