@@ -6,8 +6,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Caverneiros'
 SITENAME = 'Caverna de Dados (Este site ainda está em contrução)'
-# SITEURL = 'https://cavernadedados.com'
-SITEURL = ''
+SITEURL = 'https://cavernadedados.com'
+# SITEURL = ''
 SITE_LOGO = '/assets/img/logo.png'
 
 PATH = 'content/'
@@ -126,7 +126,7 @@ AUTHORS_BIO = {
   # "zutrinken": {
   #   "name": "Zutrinken",
   #   "cover": "https://casper.ghost.org/v1.0.0/images/team.jpg",
-  #   # "image": "assets/images/avatar.png",
+  #   "image": "assets/images/avatar.png",
   #   "website": "http://blog.arulraj.net",
   #   "linkedin": "unavailable",
   #   "github": "arulrajnet",
@@ -176,4 +176,4 @@ HEADER_COVER_OG = 'assets/img/LOGO_OG.jpg'
 COLOR_SCHEME_CSS = 'monokai.css'
 
 CSS_OVERRIDE = ['assets/css/custom.css']
-# JS_OVERRIDE = ['assets/js/custom.js']
+JS_OVERRIDE = ['assets/js/custom.js']

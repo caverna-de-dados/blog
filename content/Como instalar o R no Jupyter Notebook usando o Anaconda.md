@@ -7,13 +7,13 @@ Author: hugo
 Summary: Saiba como instalar o Setup 'R Essentials' no Anaconda e poder usar no Jupyter Notebook, o R, e mais de 80 pacotes voltados a Data Science.
 Cover: assets/img/post-1/anaconda.jpg
 
-[Jupyter Notebook](https://jupyter.org/) é uma Aplicação Web Open-Source e uma das principais ferramentas usadas pelos Data Scientists!
+[Jupyter Notebook](https://jupyter.org/) é uma Aplicação Web Open-Source e uma das principais ferramentas usadas pelos Data Scientists.
 
 Ele permite criar e compartilhar documentos que suportam desde códigos em múltiplas linguagens, como por exemplo, Python, R e Julia, até textos em Markdown, equações em LaTeX e visualizações de gráficos, imagens e vídeos, além de ser facilmente instalável pelo [Anaconda](https://anaconda.org/).
 
 Habitualmente em Data Science, a linguagem Python acaba por ser a mais utilizada no Jupyter, enquanto que o R possui seu próprio software de análises, o [RStudio](https://www.rstudio.com/).
 
-Contudo, é perfeitamente possível instalar setups de outras linguagens no Anaconda e usá-las no Jupyter Notebook. Então, bora lá!
+Contudo, é perfeitamente possível instalar setups de outras linguagens no Anaconda e usá-las no Jupyter Notebook.
 
 
 
