@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Caverneiros'
 SITENAME = 'Caverna de Dados (Este site ainda está em contrução)'
 SITEURL = 'https://cavernadedados.com'
-# SITEURL = ''
+# SITEURL = 'http://127.0.0.1:8000'
 SITE_LOGO = '/assets/img/logo.png'
 
 PATH = 'content/'
@@ -177,3 +177,5 @@ COLOR_SCHEME_CSS = 'monokai.css'
 
 CSS_OVERRIDE = ['assets/css/custom.css']
 JS_OVERRIDE = ['assets/js/custom.js']
+
+DISQUS_SITENAME = "cavernadedados"
