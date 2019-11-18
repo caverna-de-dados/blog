@@ -113,7 +113,12 @@ ul>li:before {
 
 /*CONFIGURAÇÕES GERAIS*/
 .inner {
-    max-width: 34em;
+    max-width: 40em;
+}
+
+.pagination:after, .container .post:after {
+    left: 43%;
+    width: 40em;
 }
 
 p {
@@ -149,9 +154,12 @@ div.output_area pre {
   padding: 1px 0 10px 0 !important;
 }
 
+.rendered_html pre {
+  background: #343642 !important;
+  font-size: 16px !important;
+}
 
 .rendered_html pre, .rendered_html tr, .rendered_html th, .rendered_html tbody tr:nth-child(odd) {
-  background: #343642 !important;
   font-size: 16px !important;
 }
 
@@ -164,8 +172,9 @@ div.output_text {
 }
 
 .post-content img, .post-content .fluid-width-video-wrapper {
-  width: 100% !important;
-  margin-left: 0px !important;
+  width: 80% !important;
+  display: block;
+  margin: 0 auto;
 }
 
 .rendered_html :link {
@@ -184,12 +193,12 @@ div.output_text {
 
 /*CONFIGURAÇÕES DA HOME*/
 #blog-header.has-cover {
-    padding: 100px 0;
+    padding: 80px 0;
 }
 
 .main-logo {
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 45%;
 }
 
 @media only screen and (max-width: 667px) {
