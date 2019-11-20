@@ -5,9 +5,9 @@ from __future__ import unicode_literals
 
 
 AUTHOR = 'Caverneiros'
-SITENAME = 'Caverna de Dados (Este site ainda está em contrução)'
-SITEURL = 'https://cavernadedados.com'
-#SITEURL = 'http://127.0.0.1:8000'
+SITENAME = 'Caverna de Dados (Este site ainda está em construção)'
+# SITEURL = 'https://cavernadedados.com'
+SITEURL = 'http://127.0.0.1:8000'
 SITE_LOGO = '/assets/img/logo.png'
 
 PATH = 'content/'
@@ -33,9 +33,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (
           # ('twitter', 'https://twitter.com/myprofile'),
           ('github', 'https://github.com/caverna-de-dados'),
-          ('facebook','https://www.facebook.com/myprofile/'),
+          # ('facebook','https://www.facebook.com/myprofile/'),
           # ('flickr','https://www.flickr.com/myprofile/'),
-          # ('envelope','mailto:my@mail.address')
+          ('envelope','mailto:cavernadedados@gmail.com')
           )
 
 
