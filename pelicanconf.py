@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Caverneiros'
 SITENAME = 'Caverna de Dados (Este site ainda está em construção)'
 SITEURL = 'https://cavernadedados.com'
-# SITEURL = 'http://127.0.0.1:8000'
+# SITEURL = ''
 SITE_LOGO = '/assets/img/logo.png'
 
 PATH = 'content/'
@@ -119,7 +119,7 @@ THEME = 'attila'
 ### Theme specific settings
 
 
-HEADER_COVER = 'assets/img/BG.jpg'
+HEADER_COVER = 'assets/img/BG2.jpg'
 
 
 AUTHORS_BIO = {
@@ -173,7 +173,7 @@ AUTHORS_BIO = {
 SITESUBTITLE = 'Um Blog sobre Data Science, Estatística, Economia e Programação.'
 HEADER_COVER_OG = 'assets/img/LOGO_OG.jpg'
 
-COLOR_SCHEME_CSS = 'monokai.css'
+COLOR_SCHEME_CSS = 'tomorrow_night.css'
 
 CSS_OVERRIDE = ['assets/css/custom.css']
 JS_OVERRIDE = ['assets/js/custom.js']
