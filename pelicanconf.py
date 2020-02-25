@@ -171,7 +171,7 @@ AUTHORS_BIO = {
 #HEADER_COVERS_BY_TAG = {'cupcake': 'assets/images/rainbow_cupcake_cover.png', 'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
 # HEADER_COVERS_BY_TAG = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
 SITESUBTITLE = 'Um Blog sobre Data Science, Estatística, Economia e Programação.'
-HEADER_COVER_OG = 'assets/img/LOGO_OG.jpg'
+HEADER_COVER_OG = 'assets/img/LOGO_OG2.jpg'
 
 COLOR_SCHEME_CSS = 'tomorrow_night.css'
 
