@@ -18,6 +18,8 @@
   <meta property="fb:app_id" content="87741124305" />
 
   <!-- Feed -->
+        <link href="https://cavernadedados.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Caverna de Dados (Este site ainda está em construção) Full Atom Feed" />
+          <link href="https://cavernadedados.com/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="Caverna de Dados (Este site ainda está em construção) Categories Atom Feed" />
 
   <link href="https://cavernadedados.com/theme/css/style.css" type="text/css" rel="stylesheet" />
 
@@ -47,10 +49,8 @@
 
     <meta name="author" content="diego">
 
-    <meta name="tags" content="Métodos numéricos">
+    <meta name="tags" content="métodos numéricos">
     <meta name="tags" content="python">
-    <meta name="tags" content="bisseção">
-    <meta name="tags" content="raiz de função">
 
 
 
@@ -66,10 +66,8 @@
 <meta property="article:modified_time" content=""/>
 <meta property="article:author" content="https://cavernadedados.com/author/diego">
 <meta property="article:section" content="Implementação"/>
-<meta property="article:tag" content="Métodos numéricos"/>
+<meta property="article:tag" content="métodos numéricos"/>
 <meta property="article:tag" content="python"/>
-<meta property="article:tag" content="bisseção"/>
-<meta property="article:tag" content="raiz de função"/>
 <meta property="og:image" itemprop="image" content="https://cavernadedados.com/assets/img/BG2.jpg">
 <meta property="og:image:secure_url" itemprop="image" content="https://cavernadedados.com/assets/img/BG2.jpg">
 <meta property="og:image:width" content="400" /> 
@@ -131,7 +129,7 @@
         <!-- TODO : Proper class for headline -->
         <span class="post-meta">
                 <a href="https://cavernadedados.com/author/diego">Diego Zurita |</a>
-            <time datetime="sáb 29 fevereiro 2020">sáb 29 fevereiro 2020</time>
+            <time datetime="Sat 29 February 2020">Sat 29 February 2020</time>
         </span>
         <!-- TODO : Modified check -->
             <div class="post-cover cover" style="background-image: url('https://cavernadedados.com/assets/img/BG2.jpg')">
@@ -1257,45 +1255,7 @@ h6:hover .anchor-link {
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
-.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style>
-<style type="text/css">
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-</style>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Introdu&#231;&#227;o">Introdu&#231;&#227;o<a class="anchor-link" href="#Introdu&#231;&#227;o">&#182;</a></h2><p>Iniciarei uma série sobre métodos númericos, muito em razão de uma matéria que estou tendo na faculdade (Laboratório de métodos numéricos). Então finalidade dos posts é para estudo e também para divulgar alguns métodos numéricos para fora da academia. A referência principal é <a href="https://doi.org/10.1137/9780898719987">A First Course in Numerical Methods</a></p>
@@ -1665,7 +1625,7 @@ Erro de f(x) 0.00012783173197473155
                 </div>
 
                 <aside class="post-tags">
-<a href="https://cavernadedados.com/tag/metodos-numericos">Métodos numéricos</a><a href="https://cavernadedados.com/tag/python">python</a><a href="https://cavernadedados.com/tag/bissecao">bisseção</a><a href="https://cavernadedados.com/tag/raiz-de-funcao">raiz de função</a>                </aside>
+<a href="https://cavernadedados.com/tag/metodos-numericos">métodos numéricos</a><a href="https://cavernadedados.com/tag/python">python</a>                </aside>
 
                 <div class="clear"></div>
 
@@ -1677,7 +1637,7 @@ Erro de f(x) 0.00012783173197473155
                         </figure>
                     <div class="post-author-bio">
                         <h4 class="post-author-name"><a href="https://cavernadedados.com/author/diego">Diego Zurita</a></h4>
-                            <p class="post-author-about">Graduando em Ciência da Computação pela USP, trabalho com desenvolvimento de aplicativos e analise de dados. Atualmente em uma iniação cientifica sobre Topological data analysis. </p>
+                            <p class="post-author-about">Graduando em Ciência da Computação pela USP, trabalho com desenvolvimento web e aplicativos. Atualmente em uma iniciação cientifica sobre topological data analysis. </p>
                             <span class="post-author-location"><i class="ic ic-location"></i> São Paulo/SP</span>
                         <!-- Social linkes in alphabet order. -->
                             <span class="post-author-github"><a target="_blank" href="https://github.com/DiegoZurita"><i class="ic ic-link"></i> GitHub</a></span>
