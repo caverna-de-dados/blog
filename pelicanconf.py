@@ -152,7 +152,7 @@ AUTHORS_BIO = {
     "linkedin": "diego-zurita-067775110",
     "github": "DiegoZurita",
     "location": "São Paulo/SP",
-    "bio": "Graduando em Ciência da Computação pela USP, trabalho com desenvolvimento de aplicativos e analise de dados. Atualmente em uma iniação cientifica sobre Topological data analysis. "
+    "bio": "Graduando em Ciência da Computação pela USP, trabalho com desenvolvimento web e aplicativos. Atualmente em uma iniciação cientifica sobre topological data analysis. "
   },
   "leonam": {
     "name": "Leonam Mendonça",
