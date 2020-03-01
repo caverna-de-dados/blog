@@ -1462,7 +1462,7 @@ Erro de f(x) 0.00012783173197473155
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="métodos numéricos"></category><category term="python"></category></entry><entry><title>Introdução ao Web Scraping</title><link href="https://cavernadedados.com/2019/11/introducao-ao-web-scraping.html" rel="alternate"></link><published>2019-11-20T00:00:00+01:00</published><updated>2019-11-20T00:00:00+01:00</updated><author><name>leonam</name></author><id>tag:cavernadedados.com,2019-11-20:/2019/11/introducao-ao-web-scraping.html</id><summary type="html">&lt;p&gt;Como buscar, tratar e analisar dados do seu Web Scraping em Python, utilizando os pacotes Requests, Pandas e Matplotlib.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="Métodos numéricos"></category><category term="Python"></category></entry><entry><title>Introdução ao Web Scraping</title><link href="https://cavernadedados.com/2019/11/introducao-ao-web-scraping.html" rel="alternate"></link><published>2019-11-20T00:00:00+01:00</published><updated>2019-11-20T00:00:00+01:00</updated><author><name>leonam</name></author><id>tag:cavernadedados.com,2019-11-20:/2019/11/introducao-ao-web-scraping.html</id><summary type="html">&lt;p&gt;Como buscar, tratar e analisar dados do seu Web Scraping em Python, utilizando os pacotes Requests, Pandas e Matplotlib.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
