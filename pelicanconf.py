@@ -119,7 +119,7 @@ THEME = 'attila'
 ### Theme specific settings
 
 
-HEADER_COVER = 'assets/img/bg2.jpg'
+HEADER_COVER = 'assets/img/BG2.jpg'
 
 
 AUTHORS_BIO = {
