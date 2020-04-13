@@ -1125,7 +1125,7 @@ $$&lt;h2 id="Implementa&amp;#231;&amp;#227;o-em-python"&gt;Implementa&amp;#231;&
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;__init__: recebe o chute inicial $x_0$, um número $maximo\_de\_iteracoes$, um $eps$ que diz quão longe da raiz podemos parar, e as funções $f$ e $Df$ , $f(x)$ e sua derivada, respectivamente.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;proximo&lt;em&gt;xk: retorna o $x&lt;/em&gt;{k+1}$ da equação acima dado o paramêntro $x=x_k$&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;proximo_xk: retorna o $x_{k+1}$ da equação acima dado o paramêntro $x=x_k$&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;itera: aplica o método de newton sucessivamente até que o $eps$ seja respeitado&lt;/p&gt;
 &lt;/li&gt;
