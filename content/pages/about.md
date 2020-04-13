@@ -1,7 +1,7 @@
 Title: Sobre o Caverna de Dados
 Slug: sobre
 
-O blog Caverna de Dados é uma iniciativa dos mineradores Diego Zurita, graduando em Ciência da Computação na Universidade de São Paulo (USP), Hugo Trigueiro, graduando em Economia na Universidade Federal do ABC (UFABC) e Leonam Mendonça, graduando Análise e Desenvolvimento de Sistemas no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP).
+O blog Caverna de Dados é uma iniciativa dos mineradores [Diego Zurita](/author/diego), graduando em Ciência da Computação na Universidade de São Paulo (USP), [Hugo Trigueiro](/author/hugo), graduando em Economia na Universidade Federal do ABC (UFABC) e [Leonam Mendonça](/author/leonam), graduando Análise e Desenvolvimento de Sistemas no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo (IFSP).
 
 Inicialmente, era um desejo de todos ter um espaço para escrever sobre Data Science, Estatística, Economia, Programação e tudo o que está ligado ao universo da análise de dados, com fins puramente de estudo. Afinal, sabemos que quando escrevemos e tentamos explicar um assunto para alguém, também estamos estudando e melhorando o nosso aprendizado.
 
