@@ -48,7 +48,7 @@ h6 {
 
 .main-logo {
     margin: 0 auto;
-    width: 60%;
+    width: 40%;
 }
 
 #blog-header.has-cover  {
@@ -63,9 +63,6 @@ a.anchor-link {
     .main-logo {
         width: 70% !important;
     }
-    /* #blog-header.has-cover  {
-        padding: 120px 0;
-    } */
     h1 {
         font-size: 28px;
     }
