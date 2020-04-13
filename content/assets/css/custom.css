@@ -61,10 +61,10 @@ a.anchor-link {
 /*MOBILE*/
 @media (max-width: 667px) {
     .main-logo {
-        width: 70%;
+        width: 70% !important;
     }
     #blog-header.has-cover  {
-        padding: 140px 0;
+        padding: 120px 0;
     }
     h1 {
         font-size: 28px;
@@ -115,6 +115,12 @@ pre {
 
 video {
     max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.highlight .err {
+    color: #ccc !important;
 }
 
 
@@ -129,7 +135,7 @@ video {
 }
 
 p {
-  margin: 25px auto;
+    margin: 25px auto;
 }
 
 
@@ -204,13 +210,14 @@ div.output_text {
     padding: 80px 0;
 }
 
-.main-logo {
-    margin: 0 auto;
-    max-width: 45%;
-}
-
 @media only screen and (max-width: 667px) {
     #blog-header.has-cover {
         padding: 140px 0;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .post-content img, .post-content .fluid-width-video-wrapper {
+        width: 100% !important;
     }
 }
