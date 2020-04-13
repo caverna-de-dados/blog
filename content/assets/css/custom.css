@@ -107,7 +107,7 @@ ul>li:before {
 }
 
 pre {
-    overflow: scroll;
+    overflow: auto;
 }
 
 video {
@@ -152,7 +152,7 @@ div.input_area > div.highlight {
 }
 
 div.input_area > div.highlight > pre {
-	padding: 15px !important;
+    padding: 15px !important;
 }
 
 div.output_subarea {
