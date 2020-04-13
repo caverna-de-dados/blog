@@ -109,6 +109,13 @@ ul>li:before {
     content: none;
 }
 
+pre {
+    overflow: scroll;
+}
+
+video {
+    max-width: 100%;
+}
 
 
 /*CONFIGURAÇÕES GERAIS*/
