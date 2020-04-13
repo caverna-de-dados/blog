@@ -119,7 +119,7 @@ THEME = 'attila'
 ### Theme specific settings
 
 
-HEADER_COVER = 'assets/img/BG2.jpg'
+HEADER_COVER = 'assets/img/main_images/BG2.jpg'
 
 
 AUTHORS_BIO = {
@@ -135,8 +135,8 @@ AUTHORS_BIO = {
   # }, 
   "hugo": {
     "name": "Hugo Trigueiro",
-    "cover": "assets/img/bg-hugo.jpg",
-    "image": "assets/img/hugo.jpg",
+    "cover": "assets/img/main_images/bg-hugo.jpg",
+    "image": "assets/img/main_images/hugo.jpg",
     # "twitter": "https://twitter.com/hugo_trigueiro",
     "twitter": "hugo_trigueiro",
     "linkedin": "hugo-trigueiro",
@@ -146,8 +146,8 @@ AUTHORS_BIO = {
   }, 
   "diego": {
     "name": "Diego Zurita",
-    "cover": "assets/img/bg-zurita.jpg",
-    "image": "assets/img/diego.jpg",
+    "cover": "assets/img/main_images/bg-zurita.jpg",
+    "image": "assets/img/main_images/diego.jpg",
     # "website": "http://blog.arulraj.net",
     "linkedin": "diego-zurita-067775110",
     "github": "DiegoZurita",
@@ -156,8 +156,8 @@ AUTHORS_BIO = {
   },
   "leonam": {
     "name": "Leonam Mendonça",
-    "cover": "assets/img/bg-leonam.jpg",
-    "image": "assets/img/leonam.jpg",
+    "cover": "assets/img/main_images/bg-leonam.jpg",
+    "image": "assets/img/main_images/leonam.jpg",
     #"website": "http://blog.arulraj.net",
     "linkedin": "leonammendonca",
     "github": "leonammp",
