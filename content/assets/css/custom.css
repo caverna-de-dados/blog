@@ -63,9 +63,9 @@ a.anchor-link {
     .main-logo {
         width: 70% !important;
     }
-    #blog-header.has-cover  {
+    /* #blog-header.has-cover  {
         padding: 120px 0;
-    }
+    } */
     h1 {
         font-size: 28px;
     }
@@ -206,16 +206,6 @@ div.output_text {
 
 
 /*CONFIGURAÇÕES DA HOME*/
-#blog-header.has-cover {
-    padding: 80px 0;
-}
-
-@media only screen and (max-width: 667px) {
-    #blog-header.has-cover {
-        padding: 140px 0;
-    }
-}
-
 @media only screen and (max-width: 991px) {
     .post-content img, .post-content .fluid-width-video-wrapper {
         width: 100% !important;
