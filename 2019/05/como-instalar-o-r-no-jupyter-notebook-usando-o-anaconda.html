@@ -156,24 +156,21 @@
 <p>Ao utilizar um novo environment, você terá um novo ambiente apenas para o armazenamento e organização dos pacotes de R, isso pode ajudar caso no futuro você queira deixar esse ambiente ainda mais robusto e customizado. Ainda assim, não há nenhum problema em usar o mesmo envinroment para os pacotes de Python e R.</p>
 <p>Então, no prompt do Anaconda:</p>
 <p>Para instalar o "R Essentials" no seu <strong>environment atual</strong>, utilize o comando:</p>
-<div class="highlight"><pre><span></span><span class="err">conda install -c r r-essentials </span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">conda install -c r r-essentials </span>
+</code></pre></div>
 
 <p>Caso você queira criar um <strong>novo environment</strong>, basta usar o comando abaixo (para explicitar o interpretador do R como padrão, adicionamos o r-base  ao final do comando):</p>
-<div class="highlight"><pre><span></span><span class="err">conda create -n r_env r-essentials r-base</span>
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">conda create -n r_env r-essentials r-base</span>
+</code></pre></div>
 
 <p>Pronto! Agora é só esperar a conclusão da instalação e você já terá um environment configurado com a linguagem R e seus principais pacotes.</p>
 <h2>Utilizando o R no Jupyter Notebook</h2>
 <p>Se você instalou o "R Essentials" no seu environment corrente, então basta abrir o Jupyter Notebook e você já verá a linguagem R disponível.</p>
 <p><img alt="Imagem retirada do site do Anaconda: https://docs.anaconda.com/anaconda/navigator/tutorials/r-lang/" src="https://cavernadedados.com/assets/img/post-1/jupyter.jpg"></p>
 <p>Caso você tenha usado um novo environment, então é necessário ativá-lo antes de abrir o Jupyter Notebook.</p>
-<div class="highlight"><pre><span></span><span class="err">conda activate r_env</span>
+<div class="highlight"><pre><span></span><code><span class="err">conda activate r_env</span>
 <span class="err">jupyter notebook</span>
-</pre></div>
-
+</code></pre></div>
 
 <p>Agora é só criar um novo notebook com a linguagem R. Vamos fazer alguns testes apenas para confirmar que está tudo funcionando bem.</p>
 <p>Vamos chamar o pacote dplyr:</p>
@@ -216,7 +213,6 @@
                         <!-- Social linkes in alphabet order. -->
                             <span class="post-author-github"><a target="_blank" href="https://github.com/hugotrigueiro"><i class="ic ic-link"></i> GitHub</a></span>
                             <span class="post-author-linkedin"><a target="_blank" href="https://www.linkedin.com/in/hugo-trigueiro"><i class="ic ic-link"></i> LinkedIn</a></span>
-                            <span class="post-author-twitter"><a target="_blank" href="https://twitter.com/hugo_trigueiro"><i class="ic ic-twitter"></i> Twitter</a></span>
                     </div>
                     <div class="clear"></div>
                 </aside>
