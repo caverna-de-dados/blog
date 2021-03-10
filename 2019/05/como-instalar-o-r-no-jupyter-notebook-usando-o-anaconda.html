@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+  <title>Como instalar o R no Jupyter Notebook usando o Anaconda</title>
+
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="origin" />
+  <meta name="generator" content="Pelican" />
+  <!-- <link href="https://cavernadedados.com/" rel="canonical" /> -->
+  <meta property="fb:app_id" content="87741124305" />
+
+  <!-- Feed -->
+        <link href="https://cavernadedados.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Caverna de Dados (Este site ainda está em construção) Full Atom Feed" />
+          <link href="https://cavernadedados.com/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="Caverna de Dados (Este site ainda está em construção) Categories Atom Feed" />
+
+  <link href="https://cavernadedados.com/theme/css/style.css" type="text/css" rel="stylesheet" />
+
+  <!-- Code highlight color scheme -->
+      <link href="https://cavernadedados.com/theme/css/code_blocks/tomorrow_night.css" rel="stylesheet">
+
+    <!-- CSS specified by the user -->
+
+
+    <link href="https://cavernadedados.com/assets/css/custom.css" type="text/css" rel="stylesheet" />
+
+  <!-- Custom fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+  <link href="https://cavernadedados.com/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html" rel="canonical" />
+
+    <meta name="description" content="Saiba como instalar o Setup 'R Essentials' no Anaconda e poder usar no Jupyter Notebook, o R, e mais de 80 pacotes voltados a Data Science.">
+
+    <meta name="author" content="hugo">
+
+    <meta name="tags" content="R">
+    <meta name="tags" content="Jupyter Notebook">
+    <meta name="tags" content="Anaconda">
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Caverna de Dados (Este site ainda está em construção)"/>
+<meta property="og:title" content="Como instalar o R no Jupyter Notebook usando o Anaconda"/>
+<meta property="og:description" content="Saiba como instalar o Setup 'R Essentials' no Anaconda e poder usar no Jupyter Notebook, o R, e mais de 80 pacotes voltados a Data Science."/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://cavernadedados.com/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-05-07 01:00:00+02:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://cavernadedados.com/author/hugo">
+<meta property="article:section" content="Tutoriais"/>
+<meta property="article:tag" content="R"/>
+<meta property="article:tag" content="Jupyter Notebook"/>
+<meta property="article:tag" content="Anaconda"/>
+<meta property="og:image" itemprop="image" content="https://cavernadedados.com/assets/img/post-1/anaconda.jpg">
+<meta property="og:image:secure_url" itemprop="image" content="https://cavernadedados.com/assets/img/post-1/anaconda.jpg">
+<meta property="og:image:width" content="400" /> 
+<meta property="og:image:height" content="300" />
+
+<!-- Twitter Card -->
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "name": "Como instalar o R no Jupyter Notebook usando o Anaconda",
+  "headline": "Como instalar o R no Jupyter Notebook usando o Anaconda",
+  "datePublished": "2019-05-07 01:00:00+02:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "hugo",
+    "url": "https://cavernadedados.com/author/hugo"
+  },
+  "image": "https://cavernadedados.com/assets/img/post-1/anaconda.jpg",
+  "url": "https://cavernadedados.com/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html",
+  "description": "Saiba como instalar o Setup 'R Essentials' no Anaconda e poder usar no Jupyter Notebook, o R, e mais de 80 pacotes voltados a Data Science."
+}
+</script>
+</head>
+<!-- TODO : Body class -->
+<body class="home-template">
+
+<nav id="menu">
+  <a class="close-button">Close</a>
+  <div class="nav-wrapper">
+    <p class="nav-label">Menu</p>
+    <ul>
+      <li><a href="/" role="presentation">Home</a></li>
+
+              <li role="presentation"><a href="https://cavernadedados.com/pages/sobre/">Sobre o Caverna de Dados</a></li>
+
+    </ul>
+  </div>
+</nav>
+    <!-- Progressbar -->
+    <div class="progress-container">
+        <span class="progress-bar"></span>
+    </div>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header id="blog-header" class="has-cover">
+      <div class="inner">
+        <nav id="navigation">
+            <span class="blog-logo">
+                <a href="https://cavernadedados.com/"><img src="/assets/img/logo.png" alt="Blog Logo" /></a>
+            </span>
+          <span id="menu-button" class="nav-button">
+            <a class="menu-button"><i class="ic ic-menu"></i> Menu</a>
+          </span>
+        </nav>
+        <h1 class="post-title">Como instalar o R no Jupyter Notebook usando o Anaconda</h1>
+        <!-- TODO : Proper class for headline -->
+        <span class="post-meta">
+                <a href="https://cavernadedados.com/author/hugo">Hugo Trigueiro |</a>
+            <time datetime="Tue 07 May 2019">Tue 07 May 2019</time>
+        </span>
+        <!-- TODO : Modified check -->
+            <div class="post-cover cover" style="background-image: url('https://cavernadedados.com/assets/img/post-1/anaconda.jpg')">
+      </div>
+    </header>
+
+  <section id="wrapper">
+    <a class="hidden-close"></a>
+
+    <!-- Post content -->
+    <main class="content" role="main">
+        <article class="post">
+        <div class="inner">
+            <section class="post-content">
+                <p><a href="https://jupyter.org/">Jupyter Notebook</a> é uma Aplicação Web Open-Source e uma das principais ferramentas usadas pelos Data Scientists.</p>
+<p>Ele permite criar e compartilhar documentos que suportam desde códigos em múltiplas linguagens, como por exemplo, Python, R e Julia, até textos em Markdown, equações em LaTeX e visualizações de gráficos, imagens e vídeos, além de ser facilmente instalável pelo <a href="https://anaconda.org/">Anaconda</a>.</p>
+<p>Habitualmente em Data Science, a linguagem Python acaba por ser a mais utilizada no Jupyter, enquanto que o R possui seu próprio software de análises, o <a href="https://www.rstudio.com/">RStudio</a>.</p>
+<p>Contudo, é perfeitamente possível instalar setups de outras linguagens no Anaconda e usá-las no Jupyter Notebook.</p>
+<h2>INSTALANDO O "R ESSENTIALS"</h2>
+<p>O "R Essentials" é um setup criado pela equipe do Anaconda que reúne os principais pacotes de R, com aproximadamente 80 sendo voltados para Data Science, como dplyr, ggplot2, tidyr, entre outros.</p>
+<p>Ao instalar esse setup, é possível fazer o uso da linguagem R no Jupyter Notebook, bem como todos os pacotes vindos com ele.</p>
+<p>Antes de instalar o "R Essentials" é necessário prestar <strong>atenção a um pequeno ponto</strong>: você pode instalar o "R Essentials" no seu environment (ambiente) de uso atual ou instalá-lo em um novo environment.</p>
+<p>Ao utilizar um novo environment, você terá um novo ambiente apenas para o armazenamento e organização dos pacotes de R, isso pode ajudar caso no futuro você queira deixar esse ambiente ainda mais robusto e customizado. Ainda assim, não há nenhum problema em usar o mesmo envinroment para os pacotes de Python e R.</p>
+<p>Então, no prompt do Anaconda:</p>
+<p>Para instalar o "R Essentials" no seu <strong>environment atual</strong>, utilize o comando:</p>
+<div class="highlight"><pre><span></span><code><span class="err">conda install -c r r-essentials </span>
+</code></pre></div>
+
+<p>Caso você queira criar um <strong>novo environment</strong>, basta usar o comando abaixo (para explicitar o interpretador do R como padrão, adicionamos o r-base  ao final do comando):</p>
+<div class="highlight"><pre><span></span><code><span class="err">conda create -n r_env r-essentials r-base</span>
+</code></pre></div>
+
+<p>Pronto! Agora é só esperar a conclusão da instalação e você já terá um environment configurado com a linguagem R e seus principais pacotes.</p>
+<h2>Utilizando o R no Jupyter Notebook</h2>
+<p>Se você instalou o "R Essentials" no seu environment corrente, então basta abrir o Jupyter Notebook e você já verá a linguagem R disponível.</p>
+<p><img alt="Imagem retirada do site do Anaconda: https://docs.anaconda.com/anaconda/navigator/tutorials/r-lang/" src="https://cavernadedados.com/assets/img/post-1/jupyter.jpg"></p>
+<p>Caso você tenha usado um novo environment, então é necessário ativá-lo antes de abrir o Jupyter Notebook.</p>
+<div class="highlight"><pre><span></span><code><span class="err">conda activate r_env</span>
+<span class="err">jupyter notebook</span>
+</code></pre></div>
+
+<p>Agora é só criar um novo notebook com a linguagem R. Vamos fazer alguns testes apenas para confirmar que está tudo funcionando bem.</p>
+<p>Vamos chamar o pacote dplyr:</p>
+<p><img alt="Screenshot at 12-37-43" src="https://cavernadedados.com/assets/img/post-1/library.jpg"></p>
+<p>Podemos usar agora o famoso dataset Iris:</p>
+<p><img alt="Screenshot at 12-42-14" src="https://cavernadedados.com/assets/img/post-1/dataset.jpg"></p>
+<p>Pronto! Nosso pequeno teste demonstrou que está tudo funcionando ok. Agora você já pode criar e compartilhar seus Jupyter Notebooks com a linguagem R!</p>
+<p>Espero que este breve post tenha te ajudado. Até a próxima!</p>
+            </section>
+
+            <section class="post-info">
+                <div class="post-share">
+                    <a class="twitter" href="https://twitter.com/share?text=Como instalar o R no Jupyter Notebook usando o Anaconda&amp;url=https://cavernadedados.com/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="ic ic-twitter"></i><span class="hidden">Twitter</span>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://cavernadedados.com/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="ic ic-facebook"></i><span class="hidden">Facebook</span>
+                    </a>
+                    <a class="googleplus" href="https://plus.google.com/share?url=https://cavernadedados.com/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="ic ic-googleplus"></i><span class="hidden">Google+</span>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+
+                <aside class="post-tags">
+<a href="https://cavernadedados.com/tag/r">R</a><a href="https://cavernadedados.com/tag/jupyter-notebook">Jupyter Notebook</a><a href="https://cavernadedados.com/tag/anaconda">Anaconda</a>                </aside>
+
+                <div class="clear"></div>
+
+                <aside class="post-author">
+
+
+                        <figure class="post-author-avatar">
+                            <img src="https://cavernadedados.com/assets/img/main_images/hugo.jpg" alt="Hugo Trigueiro" />
+                        </figure>
+                    <div class="post-author-bio">
+                        <h4 class="post-author-name"><a href="https://cavernadedados.com/author/hugo">Hugo Trigueiro</a></h4>
+                            <p class="post-author-about">Graduando em Economia pela Universidade Federal do ABC, pesquisador no tema de Desenvolvimento Econômico e trabalha na área de Operational Risk do Itaú Unibanco. Gosta de um cafézinho quente e nas horas vagas arranha no violão.</p>
+                            <span class="post-author-location"><i class="ic ic-location"></i> São Paulo/SP</span>
+                        <!-- Social linkes in alphabet order. -->
+                            <span class="post-author-github"><a target="_blank" href="https://github.com/hugotrigueiro"><i class="ic ic-link"></i> GitHub</a></span>
+                            <span class="post-author-linkedin"><a target="_blank" href="https://www.linkedin.com/in/hugo-trigueiro"><i class="ic ic-link"></i> LinkedIn</a></span>
+                    </div>
+                    <div class="clear"></div>
+                </aside>
+
+                </section>
+
+                <script type="text/javascript">
+                    var disqus = 'cavernadedados';
+                    var disqus_shortname = 'cavernadedados';
+                    var disqus_identifier = '/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html';
+                    var disqus_url = 'https://cavernadedados.com/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html';
+                </script>
+                <noscript>Please enable JavaScript to view the comments.</noscript>
+                <section class="post-comments">
+                        <a id="show-disqus" class="post-comments-activate" data-disqus-identifier="/2019/05/como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda.html" >Show Comments</a>
+                    <div id="disqus_thread"></div>
+                </section>
+
+                <aside class="post-nav">
+                    <div class="clear"></div>
+                </aside>
+
+            </div>
+        </article>
+    </main>
+      <!-- TODO : Body class -->
+    <div id="body-class" style="display: none;" class=""></div>
+
+    <footer id="footer">
+      <div class="inner">
+        <section class="credits">
+
+
+          <span class="credits-theme">Theme <a href="https://github.com/arulrajnet/attila" rel="nofollow">Attila</a></span>
+          <span class="credits-software">Published with <a href="https://github.com/getpelican/pelican" rel="nofollow">Pelican</a></span>
+        </section>
+      </div>
+    </footer>
+  </section>
+
+  <script type="text/javascript" src="https://cavernadedados.com/theme/js/script.js"></script>
+
+    <!-- Script specified by the user -->
+    <script type="text/javascript"  src="https://cavernadedados.com/assets/js/custom.js"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136764041-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-136764041-1', { 'anonymize_ip': true });
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'cavernadedados';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
