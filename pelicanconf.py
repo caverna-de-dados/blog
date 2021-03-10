@@ -138,7 +138,7 @@ AUTHORS_BIO = {
     "cover": "assets/img/main_images/bg-hugo.jpg",
     "image": "assets/img/main_images/hugo.jpg",
     # "twitter": "https://twitter.com/hugo_trigueiro",
-    "twitter": "hugo_trigueiro",
+    # "twitter": "hugo_trigueiro",
     "linkedin": "hugo-trigueiro",
     "github": "hugotrigueiro",
     "location": "São Paulo/SP",
