@@ -136,7 +136,7 @@ video {
 
 /*CONFIGURAÇÕES GERAIS*/
 .inner {
-    max-width: 50em;
+    max-width: 42em;
 }
 
 .pagination:after, .container .post:after {
