@@ -6,8 +6,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Caverneiros'
 SITENAME = 'Caverna de Dados (Este site ainda está em construção)'
-SITEURL = 'https://cavernadedados.com'
-# SITEURL = 'http://localhost:8000'
+# SITEURL = 'https://cavernadedados.com'
+SITEURL = 'http://localhost:8000'
 SITE_LOGO = '/assets/img/logo.png'
 
 PATH = 'content/'

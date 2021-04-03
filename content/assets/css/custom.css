@@ -19,7 +19,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'NexaRustSans-Black';
-    margin: 2.286em 0 10px 0;
+    margin: 60px 0 10px 0;
 }
 
 h1 {
@@ -110,6 +110,19 @@ pre {
     overflow: auto;
 }
 
+pre .lines {
+    display: none;
+}
+
+pre .hljs {
+    overflow: hidden;
+    color: #e2e2e2;
+}
+
+.hljs-keyword, .css .rule .hljs-keyword, .hljs-winutils, .nginx .hljs-title, .hljs-subst, .hljs-request, .hljs-status {
+    color: #e2e2e2;
+}
+
 video {
     max-width: 100%;
     margin: 0 auto;
@@ -123,7 +136,7 @@ video {
 
 /*CONFIGURAÇÕES GERAIS*/
 .inner {
-    max-width: 40em;
+    max-width: 50em;
 }
 
 .pagination:after, .container .post:after {
