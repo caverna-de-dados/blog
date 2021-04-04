@@ -1,3 +1,8 @@
+# Construir container
+
+docker build -t caverna:alfa .
+
+
 # Iniciar o docker de dev
 
 docker run --rm -it --name caverna-web -v $(pwd):/caverna  -p 8080:8080 caverna:alfa
