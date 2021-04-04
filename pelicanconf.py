@@ -82,19 +82,12 @@ AUTHORS_SAVE_AS = 'authors.html'
 
 ### Plugins
 
-MARKUP = ('md', 'ipynb')
+MARKUP = ("md", "ipynb")
 
-PLUGIN_PATHS = [
-  './plugins'
-]
+from pelican_jupyter import markup as nb_markup
+PLUGINS = [nb_markup]
 
-PLUGINS = [ 'ipynb.markup'
-  # 'sitemap',
-  # 'neighbors',
-  # 'assets'
-]
-
-IGNORE_FILES = [".ipynb_checkpoints"] 
+IGNORE_FILES = [".ipynb_checkpoints"]
 
 # Sitemap
 SITEMAP = {
