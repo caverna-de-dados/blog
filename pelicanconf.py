@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Caverneiros'
 SITENAME = 'Caverna de Dados (Este site ainda está em construção)'
 SITEURL = 'https://cavernadedados.com'
-# SITEURL = 'http://localhost:8000'
+#SITEURL = 'http://localhost:8080'
 SITE_LOGO = '/assets/img/logo.png'
 
 PATH = 'content/'
@@ -82,19 +82,12 @@ AUTHORS_SAVE_AS = 'authors.html'
 
 ### Plugins
 
-MARKUP = ('md', 'ipynb')
+MARKUP = ("md", "ipynb")
 
-PLUGIN_PATHS = [
-  './plugins'
-]
+from pelican_jupyter import markup as nb_markup
+PLUGINS = [nb_markup]
 
-PLUGINS = [ 'ipynb.markup'
-  # 'sitemap',
-  # 'neighbors',
-  # 'assets'
-]
-
-IGNORE_FILES = [".ipynb_checkpoints"] 
+IGNORE_FILES = [".ipynb_checkpoints"]
 
 # Sitemap
 SITEMAP = {
