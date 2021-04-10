@@ -5,7 +5,7 @@ Tags: R, Jupyter Notebook, Anaconda
 Slug: como-instalar-o-r-no-jupyter-notebook-usando-o-anaconda
 Author: hugo
 Summary: Saiba como instalar o Setup 'R Essentials' no Anaconda e poder usar no Jupyter Notebook, o R, e mais de 80 pacotes voltados a Data Science.
-Cover: assets/img/post-1/anaconda.jpg
+Cover: assets/img/post-2/anaconda.jpg
 
 [Jupyter Notebook](https://jupyter.org/) é uma Aplicação Web Open-Source e uma das principais ferramentas usadas pelos Data Scientists.
 
@@ -53,7 +53,7 @@ Pronto! Agora é só esperar a conclusão da instalação e você já terá um e
 
 Se você instalou o "R Essentials" no seu environment corrente, então basta abrir o Jupyter Notebook e você já verá a linguagem R disponível.
 
-![Imagem retirada do site do Anaconda: https://docs.anaconda.com/anaconda/navigator/tutorials/r-lang/]({static}/assets/img/post-1/jupyter.jpg)
+![Imagem retirada do site do Anaconda: https://docs.anaconda.com/anaconda/navigator/tutorials/r-lang/]({static}/assets/img/post-2/jupyter.jpg)
 
 Caso você tenha usado um novo environment, então é necessário ativá-lo antes de abrir o Jupyter Notebook.
 
@@ -66,11 +66,11 @@ Agora é só criar um novo notebook com a linguagem R. Vamos fazer alguns testes
 
 Vamos chamar o pacote dplyr:
 
-![Screenshot at 12-37-43]({static}/assets/img/post-1/library.jpg)
+![Screenshot at 12-37-43]({static}/assets/img/post-2/library.jpg)
 
 Podemos usar agora o famoso dataset Iris:
 
-![Screenshot at 12-42-14]({static}/assets/img/post-1/dataset.jpg)
+![Screenshot at 12-42-14]({static}/assets/img/post-2/dataset.jpg)
 
 Pronto! Nosso pequeno teste demonstrou que está tudo funcionando ok. Agora você já pode criar e compartilhar seus Jupyter Notebooks com a linguagem R!
 

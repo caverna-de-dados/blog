@@ -116,11 +116,12 @@ pre .lines {
 
 pre .hljs {
     overflow: hidden;
-    color: #e2e2e2;
+    color: #969896;
+    background-color: #0a0a0a;
 }
 
 .hljs-keyword, .css .rule .hljs-keyword, .hljs-winutils, .nginx .hljs-title, .hljs-subst, .hljs-request, .hljs-status {
-    color: #e2e2e2;
+    color: #969896;
 }
 
 video {
