@@ -166,7 +166,7 @@ AUTHORS_BIO = {
 SITESUBTITLE = 'Um Blog sobre Data Science, Estatística, Economia e Programação.'
 HEADER_COVER_OG = 'assets/img/LOGO_OG2.jpg'
 
-COLOR_SCHEME_CSS = 'tomorrow_night.css'
+COLOR_SCHEME_CSS = 'tomorrow_night_important.css'
 
 CSS_OVERRIDE = ['assets/css/custom.css']
 JS_OVERRIDE = ['assets/js/custom.js']
