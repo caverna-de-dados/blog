@@ -1,0 +1,8 @@
+Cover: assets/img/post-3/giphy.gif
+Title: Introdução ao Web Scraping
+Slug: introducao-ao-web-scraping
+Date: 20/11/2019
+Category: Tutoriais
+Tags: Web Scraping, Python
+Author: leonam
+Summary: Como buscar, tratar e analisar dados do seu Web Scraping em Python, utilizando os pacotes Requests, Pandas e Matplotlib.
