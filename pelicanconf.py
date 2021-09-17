@@ -162,7 +162,8 @@ AUTHORS_BIO = {
 # Custom Header
 
 #HEADER_COVERS_BY_TAG = {'cupcake': 'assets/images/rainbow_cupcake_cover.png', 'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
-# HEADER_COVERS_BY_TAG = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
+HEADER_COVERS_BY_TAG = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
+HEADER_COVERS_BY_CATEGORY = {'general':'https://casper.ghost.org/v1.0.0/images/writing.jpg'}
 SITESUBTITLE = 'Um Blog sobre Data Science, Estatística, Economia e Programação.'
 HEADER_COVER_OG = 'assets/img/LOGO_OG2.jpg'
 
